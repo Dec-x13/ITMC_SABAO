@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
+import SWLogo from '../../assets/SW_logo.png'; // Adjust path if needed
 
 const Navbar = () => {
   const [search, setSearch] = useState('');
@@ -11,10 +12,10 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar__logo">
-        <span className="navbar__logo-icon">#</span>
-        <span className="navbar__logo-text">StoryWeaver</span>
-      </div>
+      <a href="/" className="navbar-logo">
+        <img src={SWLogo} alt="SW Logo" style={{ height: "40px", width: "auto", marginRight: "8px" }} />
+        StoryWeaver
+      </a>
       <div className="navbar__links">
         <a href="#">Genres</a>
         <a href="#">Newest</a>

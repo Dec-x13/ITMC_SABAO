@@ -1,6 +1,7 @@
 .navbar {
   width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 8px 16px;
   background: #fff;
@@ -84,7 +85,11 @@
   font-weight: 500;
   cursor: pointer;
 }
-
+.navbar-logo img {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+}
 .container{
     width: 100%;
     min-height: 100vh;
