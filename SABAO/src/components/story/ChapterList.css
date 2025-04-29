@@ -1,0 +1,15 @@
+.chapter-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .chapter-icons .fa {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #8080FF; /* You can customize the icon color */
+  }
+  
+  .chapter-icons .fa:hover {
+    color: #333; /* Change color on hover */
+  }
+  

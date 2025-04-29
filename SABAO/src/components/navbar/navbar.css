@@ -95,3 +95,8 @@
     min-height: 100vh;
     background-color: #ced8ff;
 }
+/* src/story/Story.css */
+.custom-container {
+  background-color: transparent !important;  /* Reset background if index.css applies any */
+ 
+}
