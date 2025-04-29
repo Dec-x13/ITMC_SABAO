@@ -1,0 +1,92 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  gap: 16px;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #1a2aff;
+  margin-right: 24px;
+}
+
+.navbar__logo-icon {
+  font-size: 1.5rem;
+  margin-right: 4px;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 18px;
+  margin-right: 24px;
+}
+
+.navbar__links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.navbar__publish {
+  background: #bfcaff;
+  color: #222;
+  border: none;
+  border-radius: 16px;
+  padding: 6px 18px;
+  font-weight: 600;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.navbar__search-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 500px;
+  margin-right: 16px;
+}
+
+.navbar__search {
+  width: 100%;
+  padding: 7px 16px;
+  border-radius: 16px;
+  border: none;
+  background: #ced8ff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.navbar__filter {
+  margin-left: -48px;
+  background: #fff;
+  border: 2px solid #222;
+  border-radius: 16px;
+  padding: 4px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.navbar__login {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 16px;
+  padding: 4px 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ced8ff;
+}
