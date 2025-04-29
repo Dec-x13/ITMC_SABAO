@@ -1,0 +1,21 @@
+.cardWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 3px 3px 3px black;
+  border-radius: 15px;
+  width: 450px;
+}
+
+.infoWrapper{
+  margin: 1em;
+}
+
+.storyImage img{
+  height: 236px;
+  width: 151px;
+}
+
+.desc{
+  border-color: black;
+}
