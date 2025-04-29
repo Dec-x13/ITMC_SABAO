@@ -42,10 +42,11 @@ export default function ChapterList({ chapters }) {
                 </div>
                 {/* Icons */}
                 <div className="d-flex align-items-center">
-                  <span className="badge bg-secondary me-3">{ch.date}</span> {/* Date */}
+                  
                   <FontAwesomeIcon icon={faEdit} className="me-3" title="Edit" />
                   <FontAwesomeIcon icon={faTrashAlt} className="me-3" title="Delete" />
                   <FontAwesomeIcon icon={faCodeBranch} className="me-3" title="Git Branch" />
+                  <span className="badge bg-secondary me-3">{ch.date}</span> {/* Date */}
                 </div>
               </li>
 
