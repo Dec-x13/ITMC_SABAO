@@ -1,15 +1,118 @@
-.chapter-icons {
-    display: flex;
-    align-items: center;
-  }
-  
-  .chapter-icons .fa {
-    cursor: pointer;
-    font-size: 1.2rem;
-    color: #8080FF; /* You can customize the icon color */
-  }
-  
-  .chapter-icons .fa:hover {
-    color: #333; /* Change color on hover */
-  }
-  
+/* Scoped to ChapterList */
+.chapter-list-wrapper {
+  margin-top: 20px;
+  border:.5px solid #979696;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.chapter-list-wrapper .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chapter-list-wrapper .search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 5px 10px;
+  background-color: #8080FF;
+}
+
+.chapter-list-wrapper .search-left-icon {
+  margin-right: 10px;
+ color: white;
+}
+
+.chapter-list-wrapper .search-bar {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 200px;
+  background-color: #8080FF;/* Purple background */
+  border-radius: 20px; /* Rounded corners */
+  color:white;
+  font-size: 1rem;
+}
+
+.chapter-list-wrapper .search-bar::placeholder {
+  color: #666; /* Placeholder color */
+}
+
+.chapter-list-wrapper .new-chapter-btn {
+  padding: 8px 20px;
+  background-color: #43da66; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 15px;
+  width: 14%;
+  cursor: pointer;
+  margin-right: 2%;
+}
+
+.chapter-list-wrapper .new-chapter-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.chapter-list-wrapper .chapter-list-container {
+  margin-top: 20px;
+  max-height: 60vh; /* Set a max-height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.chapter-list-wrapper .list-group {
+  padding-left: 0;
+  margin: 0;
+}
+
+.chapter-list-wrapper .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.chapter-list-wrapper .sub-chapters {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.chapter-list-wrapper .sub-chapter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.chapter-list-wrapper .sub-chapter .date {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: #888;
+  margin-right: 2%;
+}
+
+.chapter-list-wrapper .sub-chapter .text-muted {
+  color: #6c757d;
+}
+
+.chapter-list-wrapper .d-flex {
+  display: flex;
+}
+
+.chapter-list-wrapper .me-2 {
+  margin-right: 10px;
+}
+
+.chapter-list-wrapper .badge {
+  font-size: 0.9rem;
+  background-color: #8080FF;
+  color: white;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
