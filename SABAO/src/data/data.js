@@ -101,6 +101,11 @@ export const comments = [
 ];
 
 export const suggestions = [
-  { title: "Ajani's Bizarre Adventure Part V", chapter: "1000+" },
+  { title: "Ajani's Bizarre Adventure Part V", chapter: "1000+", image: "/img/jojo.jpg" },
+  { title: "The Last Stand of the Earth Kings", chapter: "20", image: "/img/jojo.jpg" },
+  { title: "Chronicles of the Eternal Sky", chapter: "15", image: "/img/jojo.jpg" },
+  { title: "Rise of the Titans", chapter: "30", image: "/img/jojo.jpg" },
+  { title: "The Wanderer's Tale", chapter: "50", image: "/img/jojo.jpg" },
   // more suggestions...
 ];
+

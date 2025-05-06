@@ -14,9 +14,9 @@ export default function App() {
       <BookHeader book={book} coverImage={book.coverImage} />
 
       {/* The rest of the content goes inside the container */}
-      <div className="custom-container container my-4">
-        <div className="row">
-          <div className="col-md-8">
+      <div className="custom-container-fluid container-fluid my-4">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
             <ChapterList chapters={chapters} />
             <CommentsSection comments={comments} />
           </div>
