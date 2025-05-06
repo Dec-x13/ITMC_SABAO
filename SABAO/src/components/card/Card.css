@@ -3,8 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   border-radius: 15px;
-  max-width: 450px;
-  max-height: 261px;
+  max-width: 355px;
+  max-height: 200px;
   background-color: white;
   transition: box-shadow 0.2s ease-in-out;
 }
@@ -20,7 +20,9 @@
   justify-content: space-evenly;
   margin-left: 5px;
 }
-
+.title{
+  font-size: 19px;
+}
 .title, .desc{
   max-width: 284px;
   overflow: hidden;
@@ -47,15 +49,15 @@
 
 .storyImage img{
   border-radius: 15px;
-  height: 251px;
-  width: 151px;
+  height: 190px;
+  width: 120px;
 }
 
 .desc{
   border-color: black;
 }
 
-.status, .title, .desc, .branches, .genre{
-  font-size: 18.72px;
+.status, .desc, .branches, .genre{
+  font-size: 13.72px;
   
 }
