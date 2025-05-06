@@ -10,9 +10,41 @@ function Home(){
         <Navbar/>
          <div className = "carousel">
             <Card/>
+            <Card/>
+            <Card/>
          </div>
-            <MainCard/>
-            <LargeCard/>
+         <div className="container">
+            <div className="row">
+                <div class="col">
+                <MainCard/>
+                </div>
+                <div class="col">
+                <MainCard/>
+                </div>
+                <div class="col">
+                <MainCard/>
+                </div>
+                <div class="col">
+                <MainCard/>
+                </div>
+                <div class="col">
+                <MainCard/>
+                </div>
+                <div class="col">
+                <MainCard/>
+                </div>
+                <div class="col">
+                <MainCard/>
+                </div>
+                <div class="col">
+                <MainCard/>
+                </div>
+                <div class="col">
+                <MainCard/>
+                </div>
+            </div>
+            </div>
+            
         </>
         
     )
