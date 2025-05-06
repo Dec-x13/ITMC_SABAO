@@ -1,6 +1,7 @@
 .chapterNum, .updateTime{
     color: white;
     margin: 2px;
+    font-size: 18.72px;
 }
 
 .chapterNum{
@@ -13,6 +14,7 @@
 
 .mtitle, .mbranches{
     margin: 2px;
+    font-size: 18.72px;
 }
 
 .mbranches{
