@@ -9,7 +9,7 @@ function Card() {
                 <h2 className = "title">One Piece</h2>
                 <h3 className = "desc">
                     Gol D. Roger, a man referred to 
-                    as the "Pirate King", is set to...
+                    as the "Pirate King", is to be executed.
                 </h3>
                 <h3 className = "branches">Total Branches: 100</h3>
                 <h3 className = "genre">Action, Shounen, Adventure</h3>

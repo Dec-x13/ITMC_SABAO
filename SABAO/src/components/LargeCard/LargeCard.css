@@ -1,0 +1,28 @@
+.lcardWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 220px;
+    height: 390px;
+    border-radius: 21px;
+    background-color: #5E00FF;
+    gap: 10px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.lcardWrapper:hover{
+    box-shadow: 2px 2px 12px black;
+    cursor: pointer;
+}
+
+.lstoryImage img{
+    width: 220px;
+    height: 335px;
+    border-radius: 21px;
+}
+
+.ltitle{
+    color: white;
+    margin: 0;
+}

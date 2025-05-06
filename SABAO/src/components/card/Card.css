@@ -2,17 +2,49 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  box-shadow: 3px 3px 3px black;
   border-radius: 15px;
-  width: 450px;
+  max-width: 450px;
+  max-height: 261px;
+  background-color: white;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.cardWrapper:hover{
+  box-shadow: 2px 2px 12px black;
+  cursor: pointer;
 }
 
 .infoWrapper{
-  margin: 1em;
+  margin-left: 5px;
+}
+
+.title, .desc{
+  max-width: 284px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;       
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.status{
+  color: lime;
+}
+
+.genre{
+  color:#0000FF;
+}
+.storyImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
 }
 
 .storyImage img{
-  height: 236px;
+  border-radius: 15px;
+  height: 251px;
   width: 151px;
 }
 
