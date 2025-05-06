@@ -11,8 +11,8 @@ function Home(){
          <div className = "carousel">
             <Card/>
          </div>
-            {/* <MainCard/>
-            <LargeCard/> */}
+            <MainCard/>
+            <LargeCard/>
         </>
         
     )
