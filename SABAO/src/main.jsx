@@ -2,10 +2,11 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
 import Story from './Story'; 
+import HomePage from './components/home/home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 createRoot(document.getElementById('root')).render(
 
-    <Story />
+    <HomePage />
  
 )
