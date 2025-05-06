@@ -1,0 +1,67 @@
+.chapterNum, .updateTime{
+    color: white;
+    margin: 2px;
+}
+
+.chapterNum{
+    margin-left: 5px;
+}
+
+.updateTime{
+    margin-right: 5px;
+}
+
+.mtitle, .mbranches{
+    margin: 2px;
+}
+
+.mbranches{
+    color: lime;
+}
+
+.minfoWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    
+}
+
+.mcardWrapper{
+    display: flex;
+    flex-direction: row;;
+    border-radius: 15px;
+    max-width: 450px;
+    max-height: 180px;
+    background-color: white;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.mcardWrapper:hover{
+    box-shadow: 2px 2px 12px black;
+    cursor: pointer;
+  }
+
+.chapter-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #5D00FF;
+    border-radius: 12px;
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.mstoryImage{
+    display: flex;
+    justify-content: center;
+    margin: 1px;
+}
+  
+.mstoryImage img{
+    border-radius: 15px;
+    height: 175px;
+    width: 126px;
+}
