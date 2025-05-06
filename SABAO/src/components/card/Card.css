@@ -51,3 +51,8 @@
 .desc{
   border-color: black;
 }
+
+.status, .title, .desc, .branches, .genre{
+  font-size: 18.72px;
+  
+}
