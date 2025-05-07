@@ -1,0 +1,28 @@
+.genres {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background: #f3f4f6;
+  }
+  
+  .genre-btn {
+    font-weight: normal;
+    color: #9ca3af;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    text-decoration: none;
+  }
+  
+  .genre-btn:hover {
+    color: #4b5563;
+  }
+  
+  .active-genre {
+    color: black;
+    font-weight: normal;
+    border: none;
+    text-decoration: none;
+  }
