@@ -9,7 +9,7 @@ import Genres from './components/Genres/genres'
 
 createRoot(document.getElementById('root')).render(
 
-    <LandingPage />
+    <Genres />
     
  
 )

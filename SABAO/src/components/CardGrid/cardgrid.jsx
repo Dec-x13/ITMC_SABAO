@@ -25,6 +25,14 @@ const CardGrid = () => {
       <MainCard />
       <MainCard />
       <MainCard />
+      <MainCard />
+      <MainCard />
+      <MainCard />
+      <MainCard />
+      <MainCard />
+      <MainCard />
+      <MainCard />
+      <MainCard />
     
     </div>
   );
