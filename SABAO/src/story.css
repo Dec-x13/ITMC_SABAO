@@ -1,0 +1,10 @@
+.custom-container .row {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items do not break into new rows */
+  }
+  
+  .col-md-8, .col-md-4 {
+    padding-left: 0;
+    padding-right: 0; /* Adjust the padding if necessary */
+  }
+  
