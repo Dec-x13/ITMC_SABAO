@@ -8,7 +8,7 @@ import LandingPage from './components/landing/LandingPage';
 
 createRoot(document.getElementById('root')).render(
 
-    <Story />
+    <HomePage />
     
  
 )
