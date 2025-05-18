@@ -1,6 +1,5 @@
-
 import "./Card.css";
-
+import "./cardData.js"
 function Card() {
     return (
         <div className = "cardWrapper">
