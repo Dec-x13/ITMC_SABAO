@@ -33,6 +33,11 @@ function Home(){
             </div>
             <div>
                 <div className="mvs">
+                    <h2>FEATURED AUTHORS</h2>
+                </div>
+            </div>
+            <div>
+                <div className="mvs">
                     <h2>RECENTLY UPDATED</h2>
                 </div>
                 <div className="grid">
