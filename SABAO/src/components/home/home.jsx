@@ -24,7 +24,6 @@ function Home(){
             <div className="most-viewed-stories">
                 <div className="mvs">
                     <h2>MOST VIEWED STORIES</h2>
-                    <hr/>
                 </div>
                 <div className = "carousel">
                     <Card/>

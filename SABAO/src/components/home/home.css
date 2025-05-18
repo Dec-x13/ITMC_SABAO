@@ -1,3 +1,6 @@
+*{
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -5,22 +8,17 @@
 }
 
 .most-viewed-stories{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     
 }
 
 .mvs{
     display: flex;
-    justify-content: start;
-    align-items: center;
+    justify-content: center;
+    color: #000090;
 }
-
 
 .carousel{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 10px;
 }
@@ -29,6 +27,7 @@
     gap: 10px;
     padding: 0px;
 }
+
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 350px [col-start]);
