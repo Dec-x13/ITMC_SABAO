@@ -21,7 +21,7 @@ function Home(){
                     <img src={OPLOGO} alt="" className="oplogo" />
                 </div>
             </div>
-            <div className="most-viewed-stories">
+            <div>
                 <div className="mvs">
                     <h2>MOST VIEWED STORIES</h2>
                 </div>
@@ -31,40 +31,50 @@ function Home(){
                     <Card/>
                 </div>
             </div>
-            <div className="grid">
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
-                <MainCard/>
+            <div>
+                <div className="mvs">
+                    <h2>RECENTLY UPDATED</h2>
+                </div>
+                <div className="grid">
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                    <MainCard/>
+                </div>
             </div>
-            <div className="newrapper">
-                <LargeCard/>
-                <LargeCard/>
-                <LargeCard/>
-                <LargeCard/>
+            <div>
+                <div className="mvs">
+                    <h2>RECENTLY ADDED</h2>
+                </div>
+                <div className="newrapper">
+                    <LargeCard/>
+                    <LargeCard/>
+                    <LargeCard/>
+                    <LargeCard/>
+                </div>
             </div>
         </div>
         </>
