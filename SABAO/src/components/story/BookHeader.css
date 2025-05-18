@@ -1,70 +1,118 @@
-/* BookHeader Styles */
 .book-header-container {
-    width: 100%;  /* Ensure it spans the full width of the page */
-    height: 400px; /* Adjust height of BookHeader */
-    overflow: hidden; /* Prevent overflow */
-    position: relative;
-  }
-  
-  .book-header-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    filter: blur(10px); /* Apply blur effect to background */
-    z-index: -1; /* Keep the background behind the content */
-  }
-  
-  .headercont {
-    display: flex;  /* Use flexbox to arrange image and text side by side */
-    width: 70%; /* Set width to something less than 100% to center it */
-    height: 100%; /* Ensure it fills the height */
-    margin: 0 auto; /* Center the container horizontally */
-    position: relative;
-  }
-  
-  .book-header-image {
-    width: auto;  /* Keep the image size fixed */
-    height: 100%; /* Maintain height of the BookHeader */
-    object-fit: cover; /* Ensure image covers the space without distortion */
-    max-width: 50%;
-    border-radius: 10%;
-    padding: 2%; /* Image will take up 50% of the container's width */
-  }
-  
-  .book-header-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding: 1rem;
-    position: relative;
-    z-index: 1; /* Ensure text is above the background image */
-    color: white; /* Make text white for contrast */
-    width: 50%; /* Ensure text takes up the right half of the header */
-  }
- 
-  .btn-read {
-    background-color: white !important; /* White background */
-    color: #8080FF !important; /* Purple text */
-    border: 1px solid #8080FF !important; /* Purple border */
-    border-radius: 10px !important;
-  }
-  
-  .btn-bookmark {
-    background-color: #8080FF !important; /* Purple background */
-    color: white !important; /* White text */
-    border: none !important; /* No border */
-    border-radius: 10px !important;
-  }
-  .descrip{
-    color:black !important;
-  }
-  .btns{
-    padding-top: 2%;
-    padding-bottom: 2%;
-  }
-  
+  width: 100%;  /* Full width */
+  height: 400px; /* Adjust height */
+  overflow: hidden; /* Prevent overflow */
+  position: relative;
+}
+
+.book-header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  z-index: -1; /* Behind content */
+}
+
+.headercont {
+  display: flex;
+  width: calc(100% - 20px); /* Full width minus padding */
+  height: 100%;
+  margin: 0 auto;
+  margin-left: 4%;
+  padding: 0 10px; /* 10px left & right padding */
+  box-sizing: border-box; /* Include padding in width */
+  position: relative;
+  gap: 2rem; /* Space between left and right halves */
+}
+
+.header-left{
+  width: 60%; /* Equal halves */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-right {
+  width: 40%; /* Equal halves */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Left side: image and text side by side */
+.header-left {
+  flex-direction: row;
+  gap: 1rem;
+}
+
+/* Book cover image */
+.book-header-image {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  max-width: 50%;
+
+  padding-top: 3.5%;
+  padding-bottom: 3.5% ;
+}
+
+/* Text content next to image */
+.book-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+  color: white;
+  width: 50%;
+}
+
+/* Buttons container */
+.btns {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/* Read button style */
+.btn-read {
+  background-color: white !important;
+  color: #8080FF !important;
+  border: 1px solid #8080FF !important;
+  border-radius: 10px !important;
+}
+
+/* Bookmark button style */
+.btn-bookmark {
+  background-color: #8080FF !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 10px !important;
+}
+
+/* Description paragraph */
+.descrip {
+  color: black !important;
+}
+
+/* Right side new content */
+.header-right {
+  color: black;
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+
+/* Bold labels for right side */
+.header-right strong {
+  font-weight: 600;
+  margin-right: 0.3rem;
+}
+
+/* Space paragraphs nicely */
+.header-right p {
+  margin-bottom: 0.8rem;
+}

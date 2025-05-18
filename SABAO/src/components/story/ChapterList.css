@@ -116,3 +116,50 @@
   border-radius: 50px;
   padding: 5px 10px;
 }
+.chapter-list-wrapper .edit-icon:hover {
+  color: #007bff; /* Bootstrap blue or your preferred blue */
+  cursor: pointer;
+}
+
+/* Delete icon hover: red */
+.chapter-list-wrapper .delete-icon:hover {
+  color: #dc3545; /* Bootstrap red */
+  cursor: pointer;
+}
+
+/* Branch icon hover: green */
+.chapter-list-wrapper .branch-icon:hover {
+  color: #28a745; /* Bootstrap green */
+  cursor: pointer;
+}
+.chapter-list-wrapper .sub-chapter {
+  gap: 10px; /* optional spacing between left and right */
+}
+
+/* Left side: allow shrinking and truncate if too long */
+.chapter-list-wrapper .sub-chapter > div:first-child {
+  min-width: 0; /* for flexbox to allow text-truncate to work */
+  overflow: hidden;
+}
+
+/* Title text truncation */
+.chapter-list-wrapper .sub-chapter .text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 250px; /* adjust max-width as needed */
+}
+
+/* Right side container: prevent shrinking */
+.chapter-list-wrapper .sub-chapter .right-side-container {
+  min-width: 150px; /* adjust width so date + icons fit */
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+/* Date styling */
+.chapter-list-wrapper .sub-chapter .date {
+  white-space: nowrap; /* prevent date from breaking */
+  font-size: 0.8rem;
+  color: #888;
+}
