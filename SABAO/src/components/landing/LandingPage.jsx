@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../navbar/navbar';
 import './LandingPage.css';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
@@ -13,8 +14,8 @@ const LandingPage = () => {
           Join our community of writers and readers. Create, share, and discover amazing stories.
         </p>
         <div className="landing-buttons">
-          <button className="landing-btn primary">Start Writing</button>
-          <button className="landing-btn">Explore Stories</button>
+          <Link to="/editor" className="landing-btn primary">Start Writing</Link>
+          <Link to="/home" className="landing-btn">Explore Stories</Link>
         </div>
         <section className="landing-info">
           <div className="landing-info-header">
