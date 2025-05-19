@@ -9,6 +9,8 @@
   box-shadow: 2px 2px 10px black;
   transition: background-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  color:inherit;
 }
 
 .cardWrapper:hover{
@@ -67,6 +69,6 @@
 }
 
 .status, .desc, .branches, .genre{
-  font-size: 13.72px;
+  font-size: 1.1rem;
   
 }

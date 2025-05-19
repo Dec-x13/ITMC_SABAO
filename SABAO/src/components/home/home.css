@@ -67,6 +67,6 @@
 .newrapper{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
 }

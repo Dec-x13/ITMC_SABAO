@@ -1,8 +1,9 @@
 import "./Card.css";
-import "./cardData.js"
+import { Link } from 'react-router-dom';
 function Card() {
     return (
-        <div className = "cardWrapper">
+        
+        <Link to="/story/1"className = "cardWrapper">
             <div className = "infoWrapper">
                 <h3 className = "status">Releasing</h3>
                 <h2 className = "title">One Piece</h2>
@@ -16,7 +17,9 @@ function Card() {
             <div className = "storyImage">
                 <img src="src\assets\onepiece.jpg" alt="" />
             </div>
-        </div>
+        </Link>
+        
+        
     )
 }
 

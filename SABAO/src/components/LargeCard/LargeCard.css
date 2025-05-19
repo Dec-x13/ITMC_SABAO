@@ -11,6 +11,8 @@
     gap: 10px;
     transition: background-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out;
+    text-decoration: none;
+    color: inherit;
 }
 
 .lcardWrapper:hover{

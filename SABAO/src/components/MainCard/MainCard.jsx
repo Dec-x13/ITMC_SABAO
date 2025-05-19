@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
 import "./MainCard.css";
+import { Link } from 'react-router-dom';
 
 function MainCard() {
     return (
-        <div className = "mcardWrapper">
+        <Link to="/story/1" className = "mcardWrapper">
             <div className = "mstoryImage">
                 <img src="src\assets\onepiece.jpg" alt="" />
             </div>
@@ -25,7 +25,7 @@ function MainCard() {
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 

@@ -79,6 +79,7 @@ function Home(){
                     <LargeCard/>
                     <LargeCard/>
                     <LargeCard/>
+                    <LargeCard/>
                 </div>
             </div>
         </div>
