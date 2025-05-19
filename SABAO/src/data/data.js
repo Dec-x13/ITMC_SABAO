@@ -43,6 +43,8 @@ Desir Arman is one of the six remaining survivors of mankind within it.
 
 The six attempt to clear the final level of the labyrinth but ultimately fail, and the world comes to an end.`,
     coverImage: "/img/beginer.jpg",
+    branches:100,
+    genre:["Shounen", "Adventure", "Action"],
     chapters: [
       {
         chapterId: 1,
@@ -231,4 +233,24 @@ The six attempt to clear the final level of the labyrinth but ultimately fail, a
       { title: "The Wanderer's Tale", chapter: "50", image: "/img/jojo.jpg" },
     ],
   },
+  {
+    id:2,
+    title:"One Piece",
+    author:"Eiichiro Oda",
+    description:`Gol D. Roger, a man referred to as the "Pirate King," is set 
+    to be executed by the World Government. 
+    But just before his demise, he confirms the existence of a great treasure, One Piece, 
+    located somewhere within the vast ocean known as the Grand Line. 
+    Announcing that One Piece can be claimed by anyone worthy enough to reach it, 
+    the Pirate King is executed and the Great Age of Pirates begins. 
+    Twenty-two years later, a young man by the name of Monkey D. Luffy is 
+    ready to embark on his own adventure, searching for One Piece and striving 
+    to become the new Pirate King. Armed with just a straw hat, a small boat, 
+    and an elastic body, he sets out on a fantastic journey to gather his 
+    own crew and a worthy ship that will take them across the Grand Line to 
+    claim the greatest status on the high seas.`,
+    coverImage:"../assets/onepiece.jpg",
+    branches:100,
+    genre:["Shounen", "Adventure", "Action"]
+  }
 ];
