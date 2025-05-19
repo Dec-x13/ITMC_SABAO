@@ -1,14 +1,14 @@
-// src/components/BookHeader.jsx
 import './BookHeader.css'; // Import the external CSS file
 import { useNavigate } from 'react-router-dom';
 
 export default function BookHeader({ book, coverImage }) {
   const navigate = useNavigate();
 
+  // Handle the "Read" button click: Navigate to the Story page of the book
   const handleReadClick = () => {
     if (book.chapters && book.chapters.length > 0) {
-      const firstChapterId = book.chapters[0].chapterId;
-      navigate(`/chapter/${firstChapterId}`);
+      // Navigate to the Story page using the book's ID
+      navigate(`/story/${book.id}`); // Navigate to the book's Story page
     } else {
       alert('No chapters available to read.');
     }
@@ -16,13 +16,15 @@ export default function BookHeader({ book, coverImage }) {
 
   return (
     <div className="book-header-container">
+      {/* Background for the Book */}
       <div
         className="book-header-background"
         style={{ backgroundImage: `url(${coverImage})` }}
       ></div>
 
+      {/* Main Content Section */}
       <div className="headercont">
-        {/* Left half: Existing content */}
+        {/* Left side: Book Cover and Description */}
         <div className="header-left">
           <img src={coverImage} alt="Book Cover" className="book-header-image" />
           <div className="book-header-text">
@@ -40,7 +42,7 @@ export default function BookHeader({ book, coverImage }) {
           </div>
         </div>
 
-        {/* Right half: New content */}
+        {/* Right side: Book Information */}
         <div className="header-right">
           <p><strong>Author:</strong> {book.author}</p>
           <p><strong>Date Published:</strong> {book.datePublished}</p>
