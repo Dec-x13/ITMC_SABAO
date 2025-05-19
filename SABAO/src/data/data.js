@@ -44,7 +44,7 @@ Desir Arman is one of the six remaining survivors of mankind within it.
 The six attempt to clear the final level of the labyrinth but ultimately fail, and the world comes to an end.`,
     coverImage: "/img/beginer.jpg",
     branches:100,
-    genre:["Shounen", "Adventure", "Action"],
+    genres:["Shounen", "Adventure", "Action"],
     chapters: [
       {
         chapterId: 1,

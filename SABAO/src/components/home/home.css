@@ -67,6 +67,27 @@
 .newrapper{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
+}
+.authorwrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+.authors{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    align-items: center;
+    gap: 10px;
+}
+
+.authors img{
+    width:6rem;
+    align-items: center;
+    border-radius: 100px;
 }
