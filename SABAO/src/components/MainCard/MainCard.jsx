@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
 import "./MainCard.css";
+import { Link } from 'react-router-dom';
 
-function MainCard() {
+function MainCard({book}) {
     return (
-        <div className = "mcardWrapper">
+        <Link to="/story/1" className = "mcardWrapper">
             <div className = "mstoryImage">
-                <img src="src\assets\onepiece.jpg" alt="" />
+                <img src={book.coverImage} alt="" />
             </div>
             <div className = "minfoWrapper">
                 <h3 className = "mbranches">Total Branches: 100</h3>
-                <h3 className = "mtitle">One Piece</h3>
+                <h3 className = "mtitle">{book.title}</h3>
                 <div className = "chapterWrapper">
                     <div className = "chapter-btn">
                         <h3 className = "chapterNum">Chapter 100</h3>
@@ -25,7 +25,7 @@ function MainCard() {
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 

@@ -1,0 +1,242 @@
+.storyweaver-root {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+.sw-sidebar {
+  width: 220px;
+  background: #f8f9fb;
+  border-right: 1px solid #e0e0e0;
+  padding: 16px 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.sw-logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #1a2aff;
+  padding: 0 20px 16px 20px;
+  text-decoration: none;
+  gap: 6px;
+  height: 56px;
+}
+.sw-logo-img {
+  height: 32px;
+  width: auto;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.sw-search {
+  margin: 0 16px 16px 16px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #d0d0d0;
+}
+.sw-project-tree {
+  flex: 1;
+  padding: 0 24px;
+}
+.sw-project-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.sw-project-tree ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sw-project-tree li {
+  padding: 6px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  padding-left: 8px;
+}
+.sw-project-tree li.active, .sw-project-tree li:hover {
+  background: #e6eaff;
+  color: #1a2aff;
+}
+.sw-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.sw-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 24px;
+  height: 56px;
+}
+.sw-toolbar-left button,
+.sw-toolbar-right button {
+  margin-right: 8px;
+  background: #f5f7ff;
+  border: 1px solid #bfcaff;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.sw-toolbar-center {
+  flex: 1;
+  text-align: center;
+}
+.sw-doc-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.sw-editor-section {
+  flex: 1;
+  padding: 24px;
+  background: #7c8189;
+  display: flex;
+  flex-direction: column;
+}
+.sw-editor-section h2 {
+  color: #222;
+  margin-bottom: 8px;
+}
+.sw-editor {
+  flex: 1;
+  background: #7c8189;
+  border-radius: 8px;
+  border: none;
+}
+.sw-rightbar {
+  width: 260px;
+  background: #e6eaff;
+  border-left: 1px solid #bfcaff;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.sw-tools button {
+  width: 100%;
+  margin-bottom: 8px;
+  background: #fff;
+  border: 1px solid #bfcaff;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+}
+.sw-stats {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 1rem;
+  color: #222;
+  box-shadow: 0 2px 8px rgba(30,42,100,0.04);
+}
+.sw-stats div {
+  margin-bottom: 8px;
+}
+.sw-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30, 42, 100, 0.18);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sw-modal {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(30,42,100,0.18);
+  padding: 32px 36px 24px 36px;
+  min-width: 340px;
+  max-width: 90vw;
+  min-height: 120px;
+  position: relative;
+  animation: fadeIn 0.18s;
+}
+.sw-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #bfcaff;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+.sw-modal-close:hover {
+  color: #1a2aff;
+}
+.storyweaver-root.dark-mode {
+  background: #23272f;
+  color: #f5f7ff;
+}
+.storyweaver-root.dark-mode .sw-sidebar {
+  background: #23272f;
+  border-right: 1px solid #444;
+  color: #f5f7ff;
+}
+.storyweaver-root.dark-mode .sw-logo {
+  color: #7ca7ff;
+}
+.storyweaver-root.dark-mode .sw-search {
+  background: #23272f;
+  color: #f5f7ff;
+  border: 1px solid #444;
+}
+.storyweaver-root.dark-mode .sw-project-tree li.active,
+.storyweaver-root.dark-mode .sw-project-tree li:hover {
+  background: #2d3542;
+  color: #7ca7ff;
+}
+.storyweaver-root.dark-mode .sw-main {
+  background: #23272f;
+}
+.storyweaver-root.dark-mode .sw-toolbar {
+  background: #23272f;
+  border-bottom: 1px solid #444;
+}
+.storyweaver-root.dark-mode .sw-toolbar-left button,
+.storyweaver-root.dark-mode .sw-toolbar-right button {
+  background: #23272f;
+  color: #f5f7ff;
+  border: 1px solid #7ca7ff;
+}
+.storyweaver-root.dark-mode .sw-doc-title {
+  color: #f5f7ff;
+}
+.storyweaver-root.dark-mode .sw-editor-section {
+  background: #2d3542;
+}
+.storyweaver-root.dark-mode .sw-editor {
+  background: #2d3542;
+  color: #f5f7ff;
+}
+.storyweaver-root.dark-mode .sw-rightbar {
+  background: #23272f;
+  border-left: 1px solid #444;
+  color: #f5f7ff;
+}
+.storyweaver-root.dark-mode .sw-tools button {
+  background: #2d3542;
+  color: #f5f7ff;
+  border: 1px solid #7ca7ff;
+}
+.storyweaver-root.dark-mode .sw-stats {
+  background: #2d3542;
+  color: #f5f7ff;
+}
+.storyweaver-root.dark-mode .sw-modal {
+  background: #23272f;
+  color: #f5f7ff;
+}
+.storyweaver-root.dark-mode .sw-modal-close {
+  color: #7ca7ff;
+}
+.storyweaver-root.dark-mode .sw-modal-close:hover {
+  color: #fff;
+}

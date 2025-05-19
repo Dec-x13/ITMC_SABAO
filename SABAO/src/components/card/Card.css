@@ -6,12 +6,23 @@
   max-width: 355px;
   max-height: 200px;
   background-color: white;
-  transition: box-shadow 0.2s ease-in-out;
+  box-shadow: 2px 2px 10px black;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  color:inherit;
 }
 
 .cardWrapper:hover{
-  box-shadow: 2px 2px 12px black;
+  background-color: #5D00FF;
   cursor: pointer;
+}
+
+.cardWrapper:hover .title,
+.cardWrapper:hover .desc,
+.cardWrapper:hover .branches,
+.cardWrapper:hover .genre {
+  color: white;
 }
 
 .infoWrapper{
@@ -58,6 +69,6 @@
 }
 
 .status, .desc, .branches, .genre{
-  font-size: 13.72px;
+  font-size: 1.1rem;
   
 }
