@@ -14,23 +14,8 @@ The deeper into the woods, the stranger the world became. Trees twisted into sha
 
 Touching the altar, Lorem was enveloped in a vision — flashes of battles past, alliances forged, and a destiny intertwined with the fate of many. The journey was no longer just a quest for knowledge but a call to protect what was fragile and sacred.
 
-With renewed purpose, Lorem pressed onward, the night alive with possibility and peril. Each step was a story, every breath a verse in the unfolding saga.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus semper, nunc at volutpat vehicula, justo nulla hendrerit libero, non maximus eros nisl sed nibh. Proin sodales, risus ac dictum dapibus, justo erat tristique nunc, at consectetur magna nunc nec odio. Sed vestibulum, erat at efficitur dapibus, metus purus malesuada sapien, non bibendum tortor nunc nec metus.
-
-Curabitur non lacus vitae magna fermentum varius. Mauris porttitor est sed elit rhoncus, a dapibus nibh sagittis. Fusce ut consequat sapien, vitae viverra erat. Praesent luctus, sapien non laoreet aliquam, ligula odio cursus tortor, in lobortis nulla ex sed velit. Etiam sit amet justo risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-
-Suspendisse a urna eget ipsum pretium convallis. Vestibulum in ex vel sem bibendum dictum a at nunc. Integer fermentum ante in nibh tristique lobortis. Nulla facilisi. Sed efficitur condimentum ipsum, eu malesuada neque. Proin at erat purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-
-In a small village nestled between rolling hills, there lived a young wanderer named Lorem. Each dawn, Lorem would rise to greet the whispering winds and the golden hues of the sun as it spilled across the valley. Though the village was humble, it brimmed with tales of ancient magic and forgotten heroes.
-
-One morning, Lorem found a mysterious parchment buried beneath the old oak tree — its edges frayed, its ink faded but still legible. The message spoke of a hidden path through the forest leading to a realm where shadows danced and secrets slumbered. With a heart full of curiosity and courage, Lorem set forth to uncover the truth.
-
-As the journey began, the forest canopy wove a tapestry of light and shadow overhead, the rustle of leaves composing a symphony of nature’s secrets. Lorem moved cautiously yet with determination, aware that the path ahead was as much about discovery as it was about self.
-
-The deeper into the woods, the stranger the world became. Trees twisted into shapes that whispered forgotten songs, and the air shimmered with ethereal energy. At twilight, Lorem reached a clearing where the moonlight pooled like liquid silver. There, an ancient stone altar stood, inscribed with runes that pulsed softly with otherworldly glow.
-
-Touching the altar, Lorem was enveloped in a vision — flashes of battles past, alliances forged, and a destiny intertwined with the fate of many. The journey was no longer just a quest for knowledge but a call to protect what was fragile and sacred.
-
 With renewed purpose, Lorem pressed onward, the night alive with possibility and peril. Each step was a story, every breath a verse in the unfolding saga.`
+
 export const books = [
   {
     id: 1,
@@ -43,52 +28,71 @@ Desir Arman is one of the six remaining survivors of mankind within it.
 
 The six attempt to clear the final level of the labyrinth but ultimately fail, and the world comes to an end.`,
     coverImage: "/img/beginer.jpg",
-    branches:100,
-    genres:["Shounen", "Adventure", "Action"],
+    datePublished: "2025-01-01",
+    genres: ["Fantasy", "Adventure", "Magic"],
     chapters: [
       {
         chapterId: 1,
         title: "Chapter 1: The Return",
-        author: "Author1",
+        author: "Dane Joe",
+        reason: "Main storyline by original author",
         date: "2025-01-01",
         content: loremIpsum,
         imageUrl: "../../public/img/adjest.jpg",
         subChapters: [
           {
             subChapterId: "1.1",
-            title: "Sub-Chapter 1.1: The Beginning",
-            date: "2025-01-05",
+            title: "The Return (Main Storyline)",
+            author: "Dane Joe",
+            reason: "Original main story by author",
+            date: "2025-01-01",
             content: loremIpsum,
             imageUrl: "../../public/img/COVER (3).jpg",
           },
           {
             subChapterId: "1.2",
-            title: "Sub-Chapter 1.2: The Journey",
-            date: "2025-01-10",
+            title: "The Return (Alternate Reality)",
+            author: "Contributor B",
+            reason: "Alternate version exploring a different reality",
+            date: "2025-01-05",
             content: loremIpsum,
             imageUrl: "../../public/img/COVER (2).jpg",
+          },
+          {
+            subChapterId: "1.3",
+            title: "The Return (Expanded Timeline)",
+            author: "Contributor C",
+            reason: "Expansion of timeline events",
+            date: "2025-01-10",
+            content: loremIpsum,
+            imageUrl: "../../public/img/COVER (4).jpg",
           },
         ],
       },
       {
         chapterId: 2,
         title: "Chapter 2: New World",
-        author: "Author2",
+        author: "Dane Joe",
+        reason: "Main storyline continuation",
         date: "2025-01-02",
         content: loremIpsum,
         imageUrl: "../../public/img/adjest.jpg",
         subChapters: [
           {
             subChapterId: "2.1",
-            title: "Sub-Chapter 2.1: The Awakening",
-            date: "2025-01-15",
+            title: "New World Awakening (Main Storyline)",
+            author: "Dane Joe",
+            reason: "Original main story continuation",
+            date: "2025-01-02",
             content: loremIpsum,
             imageUrl: "../../public/img/COVER (3).jpg",
           },
           {
             subChapterId: "2.2",
-            title: "Sub-Chapter 2.2: The Conflict",
-            date: "2025-01-20",
+            title: "New World Awakening (Alternate Reality)",
+            author: "Contributor D",
+            reason: "Alternate reality exploring different outcome",
+            date: "2025-01-15",
             content: loremIpsum,
             imageUrl: "../../public/img/COVER (2).jpg",
           },
@@ -97,33 +101,28 @@ The six attempt to clear the final level of the labyrinth but ultimately fail, a
       {
         chapterId: 3,
         title: "Chapter 3: The Escape",
-        author: "Author3",
+        author: "Dane Joe",
+        reason: "Main storyline progression",
         date: "2025-02-01",
         content: loremIpsum,
         imageUrl: "../../public/img/adjest.jpg",
-        subChapters: [],
+        subChapters: [], // No subchapters here
       },
       {
         chapterId: 4,
         title: "Chapter 4: Into the Abyss",
-        author: "Author4",
+        author: "Dane Joe",
+        reason: "Main storyline progression",
         date: "2025-02-10",
         content: loremIpsum,
         imageUrl: "../../public/img/adjest.jpg",
-        subChapters: [
-          {
-            subChapterId: "4.1",
-            title: "Sub-Chapter 4.1: The Dark Realm",
-            date: "2025-02-12",
-            content: loremIpsum,
-            imageUrl: "../../public/img/COVER (3).jpg",
-          },
-        ],
+        // Removed subChapters due to only one subchapter
       },
       {
         chapterId: 5,
         title: "Chapter 5: The Hero's Rise",
-        author: "Author5",
+        author: "Dane Joe",
+        reason: "Main storyline progression",
         date: "2025-03-01",
         content: loremIpsum,
         imageUrl: "../../public/img/adjest.jpg",
@@ -132,28 +131,35 @@ The six attempt to clear the final level of the labyrinth but ultimately fail, a
       {
         chapterId: 6,
         title: "Chapter 6: The Labyrinth",
-        author: "Author6",
+        author: "Dane Joe",
+        reason: "Main storyline progression",
         date: "2025-03-10",
         content: loremIpsum,
         imageUrl: "../../public/img/adjest.jpg",
         subChapters: [
           {
             subChapterId: "6.1",
-            title: "Sub-Chapter 6.1: The Entrance",
+            title: "The Labyrinth Entrance (Main Storyline)",
+            author: "Dane Joe",
+            reason: "Original main story about labyrinth entrance",
             date: "2025-03-12",
             content: loremIpsum,
             imageUrl: "../../public/img/COVER (2).jpg",
           },
           {
             subChapterId: "6.2",
-            title: "Sub-Chapter 6.2: The Traps",
+            title: "The Labyrinth Entrance (Alternate Reality)",
+            author: "Contributor E",
+            reason: "Alternate reality of labyrinth entrance",
             date: "2025-03-15",
             content: loremIpsum,
             imageUrl: "../../public/img/COVER (3).jpg",
           },
           {
             subChapterId: "6.3",
-            title: "Sub-Chapter 6.3: The Secret Path",
+            title: "The Labyrinth Entrance (Expanded Timeline)",
+            author: "Contributor F",
+            reason: "Expansion on labyrinth entrance events",
             date: "2025-03-18",
             content: loremIpsum,
             imageUrl: "../../public/img/adjest.jpg",
@@ -163,24 +169,18 @@ The six attempt to clear the final level of the labyrinth but ultimately fail, a
       {
         chapterId: 7,
         title: "Chapter 7: The Final Test",
-        author: "Author7",
+        author: "Dane Joe",
+        reason: "Main storyline climax",
         date: "2025-03-25",
         content: loremIpsum,
         imageUrl: "../../public/img/adjest.jpg",
-        subChapters: [
-          {
-            subChapterId: "7.1",
-            title: "Sub-Chapter 7.1: The Challenge",
-            date: "2025-03-27",
-            content: loremIpsum,
-            imageUrl: "../../public/img/COVER (2).jpg",
-          },
-        ],
+        // Removed subChapters due to only one subchapter
       },
       {
         chapterId: 8,
         title: "Chapter 8: The End of Time",
-        author: "Author8",
+        author: "Dane Joe",
+        reason: "Main storyline conclusion",
         date: "2025-04-01",
         content: loremIpsum,
         imageUrl: "../../public/img/adjest.jpg",
@@ -189,21 +189,26 @@ The six attempt to clear the final level of the labyrinth but ultimately fail, a
       {
         chapterId: 9,
         title: "Chapter 9: The Legend Reborn",
-        author: "Author9",
+        author: "Dane Joe",
+        reason: "New arc beginning",
         date: "2025-04-05",
         content: loremIpsum,
         imageUrl: "../../public/img/adjest.jpg",
         subChapters: [
           {
             subChapterId: "9.1",
-            title: "Sub-Chapter 9.1: The Return",
+            title: "The Legend Reborn (Main Storyline)",
+            author: "Dane Joe",
+            reason: "Original main story continuation",
             date: "2025-04-08",
             content: loremIpsum,
             imageUrl: "../../public/img/COVER (3).jpg",
           },
           {
             subChapterId: "9.2",
-            title: "Sub-Chapter 9.2: The Awakening",
+            title: "The Legend Reborn (Alternate Reality)",
+            author: "Contributor G",
+            reason: "Alternate version exploring a different reality",
             date: "2025-04-10",
             content: loremIpsum,
             imageUrl: "../../public/img/COVER (2).jpg",
@@ -213,7 +218,8 @@ The six attempt to clear the final level of the labyrinth but ultimately fail, a
       {
         chapterId: 10,
         title: "Chapter 10: The Journey Continues",
-        author: "Author10",
+        author: "Dane Joe",
+        reason: "Ongoing journey",
         date: "2025-04-12",
         content: loremIpsum,
         imageUrl: "../../public/img/adjest.jpg",
@@ -233,24 +239,4 @@ The six attempt to clear the final level of the labyrinth but ultimately fail, a
       { title: "The Wanderer's Tale", chapter: "50", image: "/img/jojo.jpg" },
     ],
   },
-  {
-    id:2,
-    title:"One Piece",
-    author:"Eiichiro Oda",
-    description:`Gol D. Roger, a man referred to as the "Pirate King," is set 
-    to be executed by the World Government. 
-    But just before his demise, he confirms the existence of a great treasure, One Piece, 
-    located somewhere within the vast ocean known as the Grand Line. 
-    Announcing that One Piece can be claimed by anyone worthy enough to reach it, 
-    the Pirate King is executed and the Great Age of Pirates begins. 
-    Twenty-two years later, a young man by the name of Monkey D. Luffy is 
-    ready to embark on his own adventure, searching for One Piece and striving 
-    to become the new Pirate King. Armed with just a straw hat, a small boat, 
-    and an elastic body, he sets out on a fantastic journey to gather his 
-    own crew and a worthy ship that will take them across the Grand Line to 
-    claim the greatest status on the high seas.`,
-    coverImage:"../assets/onepiece.jpg",
-    branches:100,
-    genre:["Shounen", "Adventure", "Action"]
-  }
 ];
