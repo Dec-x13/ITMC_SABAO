@@ -9,6 +9,10 @@ export default function ChapterList({ chapters: initialChapters }) {
   const [expandedChapters, setExpandedChapters] = useState([]);
   const navigate = useNavigate();
 
+  const handleNewChapter = () => {
+    navigate('/editor');
+  };
+
   const handleChapterClick = (chapter, index) => {
     if (chapter.subChapters && chapter.subChapters.length > 0) {
       setExpandedChapters(prev =>
@@ -56,7 +60,7 @@ export default function ChapterList({ chapters: initialChapters }) {
             placeholder="Search chapters..."
           />
         </div>
-        <button className="new-chapter-btn">
+        <button className="new-chapter-btn" onClick={handleNewChapter}>
           <FontAwesomeIcon icon={faPlus} className="me-2" /> New
         </button>
       </div>
@@ -80,7 +84,10 @@ export default function ChapterList({ chapters: initialChapters }) {
                     icon={faEdit}
                     className="me-3 edit-icon"
                     title="Edit"
-                    onClick={(e) => e.stopPropagation()}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleNewChapter();
+                    }}
                   />
                   <FontAwesomeIcon
                     icon={faTrashAlt}
@@ -92,7 +99,10 @@ export default function ChapterList({ chapters: initialChapters }) {
                     icon={faCodeBranch}
                     className="me-3 branch-icon"
                     title="Git Branch"
-                    onClick={(e) => e.stopPropagation()}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleNewChapter();
+                    }}
                   />
                   <span className="badge bg-secondary me-3">{ch.date}</span>
                 </div>
