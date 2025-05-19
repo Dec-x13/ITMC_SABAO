@@ -239,4 +239,34 @@ The six attempt to clear the final level of the labyrinth but ultimately fail, a
       { title: "The Wanderer's Tale", chapter: "50", image: "/img/jojo.jpg" },
     ],
   },
+  {
+    id: 2,
+    title: "One Piece",
+    author: "Eiichiro Oda",
+    description: `Gol D. Roger, a man referred to as the "Pirate King," is set to be executed 
+    by the World Government. But just before his demise, he confirms the existence of a great 
+    treasure, One Piece, located somewhere within the vast ocean known as the Grand Line. 
+    Announcing that One Piece can be claimed by anyone worthy enough to reach it, 
+    the Pirate King is executed and the Great Age of Pirates begins.`,
+    coverImage: "/src/assets/onepiece.jpg",
+    datePublished: "2025-02-02",
+    genres: ["Shounen", "Adventure", "Action"],
+  },
+  {
+    id: 3,
+    title: "Jojo's Bizarre Adventure Part 7",
+    author: "Dingdong Dantes",
+    description: `Johnny Joestar, a young former horse racer unable to walk, 
+    travels to San Diego to bear witness to the commencement of the Steel Ball Run. 
+    There Johnny meets Gyro Zeppeli, a competitor sporting steel balls in lieu of a firearm. 
+    Amid a duel, Johnny observes Gyro using his steel ball to convey an extraordinary power, 
+    coercing a man to shoot himself. In an unexpected turn of events, Johnny touches 
+    the steel ball and senses a strength pulsating through his legs, enabling him to rise 
+    for the first time in two years. Determined to unravel the enigma behind the steel 
+    balls, Johnny resolves to partake in the race, initiating his extraordinary adventure 
+    throughout America on the Steel Ball Run.`,
+    coverImage: "/src/assets/jojopart7.jpg",
+    datePublished: "2025-03-03",
+    genres: ["Fantasy", "Adventure", "Action"],
+  }
 ];

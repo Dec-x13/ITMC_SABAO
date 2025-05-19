@@ -6,6 +6,7 @@ import HomePage from './components/home/home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LandingPage from './components/landing/LandingPage';
 import App from './App';
+import "./index.css"
 
 createRoot(document.getElementById('root')).render(
 
