@@ -16,10 +16,10 @@
     gap: 1.5rem;
 }
 
-/* .row{
+.row{
     gap: 10px;
     padding: 0px;
-} */
+} 
 
 .grid{
     display: grid;
