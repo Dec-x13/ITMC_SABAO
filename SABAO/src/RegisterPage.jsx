@@ -10,7 +10,7 @@ function RegisterPage() {
         <title>Register - StoryWeaver</title>
       </Helmet>
       <div className="navbar">
-        <img src="/logo.png" alt="StoryWeaver Logo" className="logo" />
+        <img src="/assets/SW_logo.png" alt="StoryWeaver Logo" className="logo" />
         <span className="brand">
           Story<span style={{ color: "#0055ff" }}>Weaver</span>
         </span>
