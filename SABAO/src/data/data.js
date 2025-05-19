@@ -241,7 +241,7 @@ The six attempt to clear the final level of the labyrinth but ultimately fail, a
   },
   {
     id: 2,
-    title: "One PIece",
+    title: "One Piece",
     author: "Eiichiro Oda",
     description: `Gol D. Roger, a man referred to as the "Pirate King," is set to be executed 
     by the World Government. But just before his demise, he confirms the existence of a great 

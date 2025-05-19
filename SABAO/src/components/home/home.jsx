@@ -13,7 +13,14 @@ import profile3 from '../../assets/profiles/37.jpg'
 import profile4 from '../../assets/profiles/65.jpg'
 import profile5 from '../../assets/profiles/90.jpg'
 import { books } from '../../data/data';
-
+const MainCardGrid = Array.from({ length: 30 }, () => {
+  const randomIndex = Math.floor(Math.random() * books.length);
+  return books[randomIndex];
+});
+const LargeCardGrid = Array.from({ length: 5 }, () => {
+  const randomIndex = Math.floor(Math.random() * books.length);
+  return books[randomIndex];
+});
 function Home(){
     return(
         <>
@@ -68,33 +75,9 @@ function Home(){
                     <h2>RECENTLY UPDATED</h2>
                 </div>
                 <div className="grid">
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
-                    <MainCard/>
+                    {MainCardGrid.map((book, index) => (
+                        <MainCard key={index} book={book} />
+                    ))}
                 </div>
             </div>
             <div>
@@ -102,11 +85,9 @@ function Home(){
                     <h2>RECENTLY ADDED</h2>
                 </div>
                 <div className="newrapper">
-                    <LargeCard/>
-                    <LargeCard/>
-                    <LargeCard/>
-                    <LargeCard/>
-                    <LargeCard/>
+                    {LargeCardGrid.map((book, index) => (
+                        <LargeCard key={index} book={book} />
+                    ))}
                 </div>
             </div>
         </div>
