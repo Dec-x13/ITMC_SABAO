@@ -12,7 +12,7 @@ import profile2 from '../../assets/profiles/30.jpg'
 import profile3 from '../../assets/profiles/37.jpg'
 import profile4 from '../../assets/profiles/65.jpg'
 import profile5 from '../../assets/profiles/90.jpg'
-
+import { books } from '../../data/data';
 
 function Home(){
     return(
@@ -31,9 +31,9 @@ function Home(){
                     <h2>MOST VIEWED STORIES</h2>
                 </div>
                 <div className = "carousel">
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                    {books.map((book) => (
+                        <Card key={book.id} book={book} />
+                    ))}
                 </div>
             </div>
             <div>
