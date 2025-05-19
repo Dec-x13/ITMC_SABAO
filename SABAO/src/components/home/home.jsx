@@ -43,7 +43,7 @@ function Home(){
                 <div className="authorwrapper">
                     <div className="authors">
                         <img src={profile1} alt="" className="dp" />
-                        <h5 className="authorname">Florine Holland</h5>
+                        <h5 className="authorname">Dane Joe</h5>
                     </div>
                     <div className="authors">
                         <img src={profile2} alt="" className="dp" />
