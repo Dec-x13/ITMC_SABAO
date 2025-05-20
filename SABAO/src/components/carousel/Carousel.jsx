@@ -42,27 +42,33 @@ export default function CardCarousel() {
   };
 
   return (
-    <div className="carousel-container">
-      <button className="carousel-control-prev" onClick={handlePrev}>
-        <span className="arrows">&#8249;</span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-
-      <div className="carousel">
-        <div className="carousel-inner d-flex">
-          {/* Show the current 3 books */}
-          <div className="d-flex">
-            {groupedBooks.slice(currentIndex, currentIndex + 3).map((book, index) => (
-              <Card key={book.id} book={book} />
-            ))}
+      <div className="carousel-container">
+        <div className = "button-container">
+          <button className="carousel-control-prev" onClick={handlePrev}>
+            <span className="arrows">&#8249;</span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+        </div>
+        
+        <div className="carousel">
+          <div className="carousel-inner d-flex">
+            <div className="d-flex">
+              {groupedBooks.slice(currentIndex, currentIndex + 3).map((book, index) => (
+                <Card key={book.id} book={book} />
+              ))}
+            </div>
           </div>
         </div>
+  
+        <div className = "button-container">
+          <button className="carousel-control-next" onClick={handleNext}>
+            <span className="arrows">&#8250;</span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
+        
       </div>
+    
 
-      <button className="carousel-control-next" onClick={handleNext}>
-        <span className="arrows">&#8250;</span>
-        <span className="visually-hidden">Next</span>
-      </button>
-    </div>
   );
 }
