@@ -1,50 +1,25 @@
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  opacity: 1;
-  color: black;
-}
-
+.carousel-control-next,
 .carousel-control-prev{
-    margin-left: 10%;
+  position:relative !important;
 }
 
-.carousel-control-next{
-    margin-right: 10%;
+.carousel-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex{
+  gap: 1rem;
 }
 
 .carousel-inner{
-    overflow: visible;
+  overflow: visible !important;
 }
 
 .arrows{
     font-size: 4rem;
     color: #0000FF;
 }
-.carousel-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.carousel {
-  display: flex;
-  overflow: hidden;
-  width: 80%; /* Adjust to fit your container */
-}
-
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease; /* Smooth sliding transition */
-}
-
-.carousel .card {
-  width: 18rem; /* Adjust width as needed */
-  margin: 0 10px;
-}
