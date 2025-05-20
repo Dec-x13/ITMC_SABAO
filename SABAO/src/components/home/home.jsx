@@ -3,6 +3,7 @@ import Card from '../card/Card';
 import './home.css';
 import MainCard from '../MainCard/MainCard';
 import LargeCard from '../LargeCard/LargeCard';
+import Footer from '../footer/Footer.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import OPBackground from '../../assets/onepiece-background.jpg';
 import luffy from '../../assets/luffy-gear-5-colored.png'
@@ -130,6 +131,7 @@ function Home(){
                 </div>
             </div>
         </div>
+        <Footer/>
         </>
         
     )
