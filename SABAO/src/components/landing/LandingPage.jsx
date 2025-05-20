@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../navbar/navbar';
 import './LandingPage.css';
 import { Link } from 'react-router-dom';
+import Footer from '../footer/Footer';
 
 const LandingPage = () => {
   return (
@@ -30,32 +31,7 @@ const LandingPage = () => {
           </p>
         </section>
       </main>
-      <footer className="landing-footer">
-        <div className="footer-left">
-          <div className="footer-title">StoryWeaver</div>
-          <div className="footer-desc">Where stories come to life. Join our community of writers and readers.</div>
-        </div>
-        <div className="footer-links">
-          <div className="footer-links-title">Quick Links</div>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Explore Stories</a></li>
-            <li><a href="#">Write a Story</a></li>
-            <li><a href="#">Challenges</a></li>
-          </ul>
-        </div>
-        <div className="footer-social">
-          <div className="footer-links-title">Follow Us</div>
-          <div className="footer-icons">
-            <a href="#"><span>🐦</span></a>
-            <a href="#"><span>📘</span></a>
-            <a href="#"><span>📸</span></a>
-          </div>
-        </div>
-        <div className="footer-copyright">
-          © 2025 StoryWeaver. All rights reserved.
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
