@@ -5,6 +5,7 @@ import Story from './Story';
 import HomePage from './components/home/home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap';
 import LandingPage from './components/landing/LandingPage';
 import App from './App';
 import "./index.css"
