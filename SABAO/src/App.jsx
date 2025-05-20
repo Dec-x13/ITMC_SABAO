@@ -5,6 +5,7 @@ import Home from './components/home/home';
 import Story from './Story';
 import ChapterRead from './components/story/ChapterReader';
 import StoryEditor from './components/editor/StoryEditor';
+import Genres from './components/Genres/genres';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <Route path="/story/:id" element={<Story />} />
                 <Route path="/chapter/:id" element={<ChapterRead />} />
                 <Route path="/editor" element={<StoryEditor />} />
+                <Route path="/Genres" element={<Genres />}/>
             </Routes>
         </Router>
     );
