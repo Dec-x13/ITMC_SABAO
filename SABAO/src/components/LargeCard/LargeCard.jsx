@@ -7,7 +7,7 @@ function LargeCard( {book} ) {
     const fontSize = titleLength > 25 ? '16px' : '24px';
 
     return(
-        <Link to="/story/1" className = "lcardWrapper">
+        <Link to={`/story/${book.id}`} className = "lcardWrapper">
             <div className = "lstoryImage">
                 <img src={book.coverImage} alt="" />
             </div>

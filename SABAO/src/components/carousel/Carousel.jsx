@@ -1,9 +1,12 @@
-import { useMemo } from 'react';
+import { useMemo, useEffect } from 'react';
 import Card from '../card/Card';
 import { books } from '../../data/data';
 import './Carousel.css';
 
-export default function Carousel() {
+// Import only the carousel module from Bootstrap (ESM-friendly)
+import Carousel from 'bootstrap/js/dist/carousel';
+
+export default function CardCarousel() {
   const groupedBooks = useMemo(() => {
     const result = [];
     for (let i = 0; i < books.length; i += 3) {
@@ -12,13 +15,25 @@ export default function Carousel() {
     return result;
   }, []);
 
+  useEffect(() => {
+    // Manually initialize the Bootstrap carousel
+    const carouselEl = document.querySelector('#bookCarousel');
+    if (carouselEl) {
+      new Carousel(carouselEl, {
+        interval: false,
+        wrap: true,
+        ride: false
+      });
+    }
+  }, []);
+
   return (
-    <div id="bookCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+    <div id="bookCarousel" className="carousel slide">
       <div className="carousel-inner">
-        {groupedBooks.map((books, index) => (
+        {groupedBooks.map((group, index) => (
           <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
             <div className="d-flex justify-content-center gap-3">
-              {books.map((book) => (
+              {group.map((book) => (
                 <Card key={book.id} book={book} />
               ))}
             </div>

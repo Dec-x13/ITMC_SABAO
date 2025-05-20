@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Card({book}) {
     return (
         
-        <Link key = {book.id}to="/story/1"className = "cardWrapper">
+        <Link key = {book.id} to={`/story/${book.id}`} className = "cardWrapper">
             <div className = "infoWrapper">
                 <h3 className = "status">Releasing</h3>
                 <h2 className = "title">{book.title}</h2>
