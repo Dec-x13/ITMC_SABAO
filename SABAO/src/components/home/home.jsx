@@ -3,6 +3,7 @@ import Card from '../card/Card';
 import './home.css';
 import MainCard from '../MainCard/MainCard';
 import LargeCard from '../LargeCard/LargeCard';
+import Footer from '../footer/Footer.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import OPBackground from '../../assets/onepiece-background.jpg';
 import luffy from '../../assets/luffy-gear-5-colored.png'
@@ -13,6 +14,11 @@ import profile3 from '../../assets/profiles/37.jpg'
 import profile4 from '../../assets/profiles/65.jpg'
 import profile5 from '../../assets/profiles/90.jpg'
 import { books } from '../../data/data';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from "react-slick";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
 
 const MainCardGrid = Array.from({ length: 30 }, () => {
   const randomIndex = Math.floor(Math.random() * books.length);
@@ -22,6 +28,36 @@ const LargeCardGrid = Array.from({ length: 5 }, () => {
   const randomIndex = Math.floor(Math.random() * books.length);
   return books[randomIndex];
 });
+
+function NextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div className={className} style={{ ...style, display: "flex", right: 0, zIndex: 2 }} onClick={onClick}>
+      <FaChevronRight size={24} color="black" />
+    </div>
+  );
+}
+
+function PrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div className={className} style={{ ...style, display: "flex", left: 0, zIndex: 2 }} onClick={onClick}>
+      <FaChevronLeft size={24} color="black" />
+    </div>
+  );
+}   
+
+const carouselSettings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  nextArrow: <NextArrow />,
+  prevArrow: <PrevArrow />,
+};
+
+
 
 function Home(){
     return(
@@ -39,11 +75,13 @@ function Home(){
                 <div className="mvs">
                     <h2>MOST VIEWED STORIES</h2>
                 </div>
-                <div className = "carousel">
+                <Slider {...carouselSettings} className="carousel">
                     {books.map((book) => (
-                        <Card key={book.id} book={book} />
+                        <div key={book.id}>
+                            <Card book={book} />
+                        </div>
                     ))}
-                </div>
+                </Slider>
             </div>
             <div>
                 <div className="mvs">
@@ -93,6 +131,7 @@ function Home(){
                 </div>
             </div>
         </div>
+        <Footer/>
         </>
         
     )

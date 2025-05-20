@@ -11,10 +11,49 @@
     color: #000090;
 }
 
-.carousel{
+/* .carousel{
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slick-slide{
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.slick-slider {
+    overflow: visible;
+} */
+
+.carousel {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.carousel .slick-slide {
+    padding: 0 !important;  /* remove padding */
+    margin: 0 !important;   /* remove margin */
+    display: flex !important;
+    justify-content: center;
+}
+
+.carousel .slick-track {
+    display: flex !important;
+}
+
+.carousel .slick-list {
+    overflow: visible; /* so drop shadows or cards don’t get cut */
+}
+
+.carousel .slick-slide > div {
+    padding: 0;        /* removes space around each card */
+    margin: 0;         /* ensures no extra margin either */
 }
 
 .row{
