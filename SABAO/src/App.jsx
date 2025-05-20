@@ -5,6 +5,8 @@ import Home from './components/home/home';
 import Story from './Story';
 import ChapterRead from './components/story/ChapterReader';
 import StoryEditor from './components/editor/StoryEditor';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     return (

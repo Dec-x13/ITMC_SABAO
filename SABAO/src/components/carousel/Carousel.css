@@ -27,3 +27,24 @@
     font-size: 4rem;
     color: #0000FF;
 }
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 80%; /* Adjust to fit your container */
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth sliding transition */
+}
+
+.carousel .card {
+  width: 18rem; /* Adjust width as needed */
+  margin: 0 10px;
+}
