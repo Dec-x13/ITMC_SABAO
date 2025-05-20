@@ -3,6 +3,7 @@ import Card from '../card/Card';
 import './home.css';
 import MainCard from '../MainCard/MainCard';
 import LargeCard from '../LargeCard/LargeCard';
+import Carousel from '../carousel/Carousel.jsx';
 import Footer from '../footer/Footer.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import OPBackground from '../../assets/onepiece-background.jpg';
@@ -14,10 +15,7 @@ import profile3 from '../../assets/profiles/37.jpg'
 import profile4 from '../../assets/profiles/65.jpg'
 import profile5 from '../../assets/profiles/90.jpg'
 import { books } from '../../data/data';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Slider from "react-slick";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
 
 
 const MainCardGrid = Array.from({ length: 30 }, () => {
@@ -30,25 +28,25 @@ const LargeCardGrid = Array.from({ length: 5 }, () => {
 });
 
 function NextArrow(props) {
-  const { className, style, onClick } = props;
+  const {onClick } = props;
   return (
-    <div className={className} style={{ ...style, display: "flex", right: 0, zIndex: 2 }} onClick={onClick}>
+    <div className="rightArrow" onClick={onClick}>
       <FaChevronRight size={24} color="black" />
     </div>
   );
 }
 
 function PrevArrow(props) {
-  const { className, style, onClick } = props;
+  const {onClick } = props;
   return (
-    <div className={className} style={{ ...style, display: "flex", left: 0, zIndex: 2 }} onClick={onClick}>
+    <div className="leftArrow" onClick={onClick}>
       <FaChevronLeft size={24} color="black" />
     </div>
   );
 }   
 
 const carouselSettings = {
-  dots: false,
+  dots: true,
   infinite: true,
   speed: 500,
   slidesToShow: 3,
@@ -75,13 +73,7 @@ function Home(){
                 <div className="mvs">
                     <h2>MOST VIEWED STORIES</h2>
                 </div>
-                <Slider {...carouselSettings} className="carousel">
-                    {books.map((book) => (
-                        <div key={book.id}>
-                            <Card book={book} />
-                        </div>
-                    ))}
-                </Slider>
+                <Carousel/>
             </div>
             <div>
                 <div className="mvs">
