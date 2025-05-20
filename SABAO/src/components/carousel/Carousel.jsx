@@ -28,7 +28,7 @@ export default function CardCarousel() {
   }, []);
 
   return (
-    <div id="bookCarousel" className="carousel slide">
+    <div id="#bookCarousel" className="carousel slide">
       <div className="carousel-inner">
         {groupedBooks.map((group, index) => (
           <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
