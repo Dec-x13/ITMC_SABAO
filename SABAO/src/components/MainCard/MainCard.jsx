@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function MainCard({book}) {
     return (
-        <Link to="/story/1" className = "mcardWrapper">
+        <Link to={`/story/${book.id}`} className = "mcardWrapper">
             <div className = "mstoryImage">
                 <img src={book.coverImage} alt="" />
             </div>
