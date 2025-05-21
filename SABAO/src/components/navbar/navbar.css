@@ -8,15 +8,18 @@
   border: 1px solid #ccc;
   box-sizing: border-box;
   gap: 16px;
+  z-index: 10; /* Eensure navbar stays above the blur */
+  position: relative; /* To make z-index effective */
 }
 
-.navbar__logo {
+.navbar-logo {
   display: flex;
   align-items: center;
   font-weight: bold;
   font-size: 1.2rem;
   color: #1a2aff;
   margin-right: 24px;
+  text-decoration: none;
 }
 
 .navbar__logo-icon {
@@ -54,6 +57,7 @@
   flex: 1;
   max-width: 500px;
   margin-right: 16px;
+  position: relative; /* Add this to anchor the popup */
 }
 
 .navbar__search {
@@ -94,6 +98,83 @@
     width: 100%;
     min-height: 100vh;
     background-color: #ced8ff;
+}
+
+.filter-popup {
+  position: absolute;
+  top: 110%; /* Just below the filter button */
+  right: 0;
+  background: #f5f7ff; /* Soft blue background */
+  border: 1.5px solid #bfcaff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(30, 42, 100, 0.12);
+  padding: 20px 28px;
+  min-width: 220px;
+  z-index: 100;
+  animation: fadeIn 0.18s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.filter-popup-content {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  min-width: 0;
+}
+
+.filter-popup-content h4 {
+  margin: 0 0 10px 0;
+  color: #1a2aff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.filter-genres-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px 0 16px 0;
+}
+
+.filter-genre-item {
+  font-size: 1rem;
+  color: #222;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-popup-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.filter-popup-actions button {
+  background: #1a2aff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.filter-popup-actions button:last-child {
+  background: #bfcaff;
+  color: #222;
+}
+
+.filter-popup-actions button:hover {
+  background: #2233ff;
+  color: #fff;
 }
 /* src/story/Story.css */
 .custom-container {

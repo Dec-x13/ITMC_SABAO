@@ -1,0 +1,38 @@
+.lcardWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 220px;
+    height: 390px;
+    border-radius: 21px;
+    background-color: #5E00FF;
+    box-shadow: 2px 2px 12px black;
+    gap: 10px;
+    transition: background-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.lcardWrapper:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.lcardWrapper:hover .ltitle{
+    color: #5E00FF;
+}
+
+.lstoryImage img{
+    width: 220px;
+    height: 335px;
+    border-radius: 21px;
+}
+
+.ltitle{
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}

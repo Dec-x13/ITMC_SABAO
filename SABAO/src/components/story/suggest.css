@@ -1,0 +1,57 @@
+/* Scoped Suggestions Styles */
+.suggestions-section {
+    background-color: #8080FF; /* Base background color for the whole section */
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .suggestions-section .list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    width: 100%;
+    background-color:#9999FF ; /* Default background for items */
+    transition: background-color 0.3s ease;
+    border:none; /* Optional: Add smooth transition for background changes */
+  }
+  
+  .suggestions-section .list-group-item:nth-child(even) {
+    background-color:#8080FF ; /* Background for even-numbered items */
+  }
+  
+  .suggestions-section .suggestion-image {
+    margin-right: 15px; /* Adds spacing between the image and text */
+  }
+  
+  .suggestions-section .suggestion-img {
+    width: 50px;  /* Set the width you desire */
+    height: 100%; /* Set the height you desire */
+    object-fit: cover; /* Ensures the image fits within the box */
+    border-radius: 5px; /* Optional: Adds rounded corners if you want a slight box effect */
+  }
+  
+  .suggestions-section .suggestion-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10px; /* Adds spacing between the image and text */
+  }
+  
+  .suggestions-section .suggestion-title {
+    font-weight: bold;
+    font-size: 1rem; /* Adjust the font size for the title */
+    margin-bottom: 3px; 
+    color:white/* Adds a little space between the title and chapter number */
+  }
+  
+  .suggestions-section .suggestion-chapter {
+    font-size: 0.9rem;
+    color: #eeeeee; /* Optional: Lighter color for the chapter number */
+    margin-top: 0; /* Removes any extra space above the chapter number */
+  }
+  .suggestions-section h5{
+    padding: 10px;
+    color:white;
+  }
+  

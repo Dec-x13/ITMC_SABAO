@@ -1,31 +1,39 @@
-// src/story
+import React from 'react';
+import { useParams } from 'react-router-dom';
 import BookHeader from './components/story/BookHeader';
 import ChapterList from './components/story/ChapterList';
 import CommentsSection from './components/story/CommentsSection';
 import Suggestions from './components/story/Suggestions';
 import Navbar from './components/navbar/navbar';
+import './story.css';
+import { books } from './data/data';  // Correctly import the books data
 
-import { book, chapters, comments, suggestions } from './data/data';
+const Story = () => {
+  const { id } = useParams();  // Get the book ID from the URL
+  const selectedBook = books.find(book => book.id.toString() === id);  // Find the book using the id
 
-export default function App() {
+  if (!selectedBook) {
+    return <div>Book not found!</div>;  // Display error if book is not found
+  }
+
   return (
     <div>
-    <Navbar />
-      {/* BookHeader is outside the container, so it spans full width */}
-      <BookHeader book={book} coverImage={book.coverImage} />
+      <Navbar />
+      <BookHeader book={selectedBook} coverImage={selectedBook.coverImage} /> {/* Passing book info to BookHeader */}
 
-      {/* The rest of the content goes inside the container */}
-      <div className="custom-container container my-4" >
-        <div className="row">
-          <div className="col-md-8">
-            <ChapterList chapters={chapters} />
-            <CommentsSection comments={comments} />
+      <div className="custom-container-fluid container-fluid my-4">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            <ChapterList chapters={selectedBook.chapters} /> {/* Display chapters of the selected book */}
+            <CommentsSection comments={selectedBook.comments} /> {/* Display comments */}
           </div>
-          <div className="col-md-4">
-            <Suggestions suggestions={suggestions} />
+          <div className="col-md-3">
+            <Suggestions suggestions={selectedBook.suggestions} /> {/* Display suggestions */}
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Story;

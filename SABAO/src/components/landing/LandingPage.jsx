@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from '../navbar/navbar';
 import './LandingPage.css';
+import { Link } from 'react-router-dom';
+import Footer from '../footer/Footer';
 
 const LandingPage = () => {
   return (
@@ -13,8 +15,8 @@ const LandingPage = () => {
           Join our community of writers and readers. Create, share, and discover amazing stories.
         </p>
         <div className="landing-buttons">
-          <button className="landing-btn primary">Start Writing</button>
-          <button className="landing-btn">Explore Stories</button>
+          <Link to="/editor" className="landing-btn primary">Start Writing</Link>
+          <Link to="/home" className="landing-btn">Explore Stories</Link>
         </div>
         <section className="landing-info">
           <div className="landing-info-header">
@@ -29,32 +31,7 @@ const LandingPage = () => {
           </p>
         </section>
       </main>
-      <footer className="landing-footer">
-        <div className="footer-left">
-          <div className="footer-title">StoryWeaver</div>
-          <div className="footer-desc">Where stories come to life. Join our community of writers and readers.</div>
-        </div>
-        <div className="footer-links">
-          <div className="footer-links-title">Quick Links</div>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Explore Stories</a></li>
-            <li><a href="#">Write a Story</a></li>
-            <li><a href="#">Challenges</a></li>
-          </ul>
-        </div>
-        <div className="footer-social">
-          <div className="footer-links-title">Follow Us</div>
-          <div className="footer-icons">
-            <a href="#"><span>🐦</span></a>
-            <a href="#"><span>📘</span></a>
-            <a href="#"><span>📸</span></a>
-          </div>
-        </div>
-        <div className="footer-copyright">
-          © 2025 StoryWeaver. All rights reserved.
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

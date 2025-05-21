@@ -1,0 +1,128 @@
+/* Scoped to CommentsSection */
+.comments-section {
+  background-color: #8080FF; /* Background for the entire comment section */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Ensure the whole section spans the width */
+}
+
+.comments-section h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.comments-section .comment-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.comments-section .innerbox {
+  background-color: #BFBFFF;
+  width: 100%;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+.comments-section .comment-input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100%; /* Ensure it takes up the full width of the section */
+  box-sizing: border-box; /* Prevents overflow */
+}
+
+.comments-section .comment-textbox {
+  flex: 1;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  margin-right: 10px;
+  font-size: 1rem;
+  width: 80%; /* Slightly bigger width */
+}
+
+.comments-section .send-btn {
+  background-color: #8080FF;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.comments-section .send-btn:hover {
+  background-color: #6666FF;
+}
+
+.comments-section .profile-icon {
+  font-size: 2rem;
+  color: #BFBFFF; /* User profile color */
+  margin-left: 10px;
+}
+
+.comments-section .commenter-profile-icon {
+  font-size: 1.5rem;
+  color: #8080FF; /* Commenter's profile color */
+  margin-right: 10px;
+}
+
+.comments-section .list-group-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  background-color: white; /* Background for each comment */
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional for better separation */
+}
+
+.comments-section .d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.comments-section .comment-user-profile {
+  display: flex;
+  align-items: center;
+  color: #8080FF;
+  font-size:2.5rem;
+  padding: 2%;
+}
+
+.comments-section .mt-3 {
+  margin-top: 1rem;
+}
+
+.comments-section .mt-4 {
+  margin-top: 1.5rem;
+}
+
+.comments-section .list-group {
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Ensures the comment list takes full width */
+}
+/* Scoped to CommentsSection */
+.comments-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.comment-icon {
+  font-size: 1.5rem;
+  color: white; /* Adjust color if necessary */
+  margin-right: 10px;
+   /* Space between the icon and the title */
+}
+
+.comments-section h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white; /* Adjust color if necessary */
+
+}

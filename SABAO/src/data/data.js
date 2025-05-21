@@ -1,106 +1,468 @@
-// src/data/data.js
-export const book = {
-  title: "A Returner's Magic Should Be Special",
-  author: "Dane Joe",
-  description: 
-    `Now that I'm back, I won't allow my loved ones to die again!
-    
-    The Shadow Labyrinth - the most catastrophic existence humanity has faced in history.
-    Desir Arman is one of the six remaining survivors of mankind within it.
-    
-    The six attempt to clear the final level of the labyrinth but ultimately fail, and the world comes to an end.`,
-  coverImage: "/img/beginer.jpg",  // Corrected path
-};
+const loremIpsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus semper, nunc at volutpat vehicula, justo nulla hendrerit libero, non maximus eros nisl sed nibh. Proin sodales, risus ac dictum dapibus, justo erat tristique nunc, at consectetur magna nunc nec odio. Sed vestibulum, erat at efficitur dapibus, metus purus malesuada sapien, non bibendum tortor nunc nec metus.
 
-// src/data/data.js
-export const chapters = [
-  { 
-    title: "Chapter 1: The Return", 
-    author: "Author1", 
-    date: "2025-01-01", 
-    subChapters: [
-      { title: "Sub-Chapter 1.1: The Beginning", date: "2025-01-05" },
-      { title: "Sub-Chapter 1.2: The Journey", date: "2025-01-10" }
-    ]
+Curabitur non lacus vitae magna fermentum varius. Mauris porttitor est sed elit rhoncus, a dapibus nibh sagittis. Fusce ut consequat sapien, vitae viverra erat. Praesent luctus, sapien non laoreet aliquam, ligula odio cursus tortor, in lobortis nulla ex sed velit. Etiam sit amet justo risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Suspendisse a urna eget ipsum pretium convallis. Vestibulum in ex vel sem bibendum dictum a at nunc. Integer fermentum ante in nibh tristique lobortis. Nulla facilisi. Sed efficitur condimentum ipsum, eu malesuada neque. Proin at erat purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+In a small village nestled between rolling hills, there lived a young wanderer named Lorem. Each dawn, Lorem would rise to greet the whispering winds and the golden hues of the sun as it spilled across the valley. Though the village was humble, it brimmed with tales of ancient magic and forgotten heroes.
+
+One morning, Lorem found a mysterious parchment buried beneath the old oak tree — its edges frayed, its ink faded but still legible. The message spoke of a hidden path through the forest leading to a realm where shadows danced and secrets slumbered. With a heart full of curiosity and courage, Lorem set forth to uncover the truth.
+
+As the journey began, the forest canopy wove a tapestry of light and shadow overhead, the rustle of leaves composing a symphony of nature’s secrets. Lorem moved cautiously yet with determination, aware that the path ahead was as much about discovery as it was about self.
+
+The deeper into the woods, the stranger the world became. Trees twisted into shapes that whispered forgotten songs, and the air shimmered with ethereal energy. At twilight, Lorem reached a clearing where the moonlight pooled like liquid silver. There, an ancient stone altar stood, inscribed with runes that pulsed softly with otherworldly glow.
+
+Touching the altar, Lorem was enveloped in a vision — flashes of battles past, alliances forged, and a destiny intertwined with the fate of many. The journey was no longer just a quest for knowledge but a call to protect what was fragile and sacred.
+
+With renewed purpose, Lorem pressed onward, the night alive with possibility and peril. Each step was a story, every breath a verse in the unfolding saga.`;
+
+export const books = [
+  {
+    id: 1,
+    title: "A Returner's Magic Should Be Special",
+    author: "Dane Joe",
+    description: `Now that I'm back, I won't allow my loved ones to die again! The Shadow Labyrinth - the most catastrophic existence humanity has faced in history. Desir Arman is one of the six remaining survivors of mankind within it. The six attempt to clear the final level of the labyrinth but ultimately fail, and the world comes to an end.`,
+    coverImage: "../../public/img/beginer.jpg",
+    datePublished: "2025-01-01",
+    genres: ["Fantasy", "Adventure", "Magic"],
+    chapters: [
+      {
+        chapterId: 1,
+        bookId: 1,
+        title: "Chapter 1: The Return",
+        author: "Dane Joe",
+        reason: "Main storyline by original author",
+        date: "2025-01-01",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+        subChapters: [
+          {
+            subChapterId: "1.1",
+            bookId: 1,
+            title: "The Return (Main Storyline)",
+            author: "Dane Joe",
+            reason: "Original main story by author",
+            date: "2025-01-01",
+            content: loremIpsum,
+            imageUrl: "../../public/img/COVER (3).jpg",
+          },
+          {
+            subChapterId: "1.2",
+            bookId: 1,
+            title: "The Return (Alternate Reality)",
+            author: "Contributor B",
+            reason: "Alternate version exploring a different reality",
+            date: "2025-01-05",
+            content: loremIpsum,
+            imageUrl: "../../public/img/COVER (2).jpg",
+          },
+        ],
+      },
+      {
+        chapterId: 2,
+        bookId: 1,
+        title: "Chapter 2: New World",
+        author: "Dane Joe",
+        reason: "Main storyline continuation",
+        date: "2025-01-02",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+        subChapters: [
+          {
+            subChapterId: "2.1",
+            bookId: 1,
+            title: "New World Awakening (Main Storyline)",
+            author: "Dane Joe",
+            reason: "Original main story continuation",
+            date: "2025-01-02",
+            content: loremIpsum,
+            imageUrl: "../../public/img/COVER (3).jpg",
+          },
+          {
+            subChapterId: "2.2",
+            bookId: 1,
+            title: "New World Awakening (Alternate Reality)",
+            author: "Contributor D",
+            reason: "Alternate reality exploring different outcome",
+            date: "2025-01-15",
+            content: loremIpsum,
+            imageUrl: "../../public/img/COVER (2).jpg",
+          },
+        ],
+      },
+      {
+        chapterId: 3,
+        bookId: 1,
+        title: "Chapter 3: The Escape",
+        author: "Dane Joe",
+        reason: "Main storyline progression",
+        date: "2025-02-01",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 4,
+        bookId: 1,
+        title: "Chapter 4: Into the Abyss",
+        author: "Dane Joe",
+        reason: "Main storyline progression",
+        date: "2025-02-10",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 5,
+        bookId: 1,
+        title: "Chapter 5: The Hero's Rise",
+        author: "Dane Joe",
+        reason: "Main storyline progression",
+        date: "2025-03-01",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 6,
+        bookId: 1,
+        title: "Chapter 6: The Labyrinth",
+        author: "Dane Joe",
+        reason: "Main storyline progression",
+        date: "2025-03-10",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 7,
+        bookId: 1,
+        title: "Chapter 7: The Final Test",
+        author: "Dane Joe",
+        reason: "Main storyline climax",
+        date: "2025-03-25",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 8,
+        bookId: 1,
+        title: "Chapter 8: The End of Time",
+        author: "Dane Joe",
+        reason: "Main storyline conclusion",
+        date: "2025-04-01",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 9,
+        bookId: 1,
+        title: "Chapter 9: The Legend Reborn",
+        author: "Dane Joe",
+        reason: "New arc beginning",
+        date: "2025-04-05",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 10,
+        bookId: 1,
+        title: "Chapter 10: The Journey Continues",
+        author: "Dane Joe",
+        reason: "Ongoing journey",
+        date: "2025-04-12",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+    ],
+    comments: [
+      { user: "Peyronie", text: "I cried at this scene 😭", time: "1 minute ago" },
+      { user: "MystR", text: "Best chapter so far!", time: "2 minutes ago" },
+      { user: "Critique", text: "Little hard to follow Chapter 3", time: "1 week ago" },
+    ],
+    suggestions: [
+      { bookId: 2, title: "One Piece", chapter: "10", image: "/src/assets/onepiece.jpg" },
+      { bookId: 3, title: "Jojo's Bizarre Adventure Part 7", chapter: "5", image: "/src/assets/jojopart7.jpg" },
+    ],
   },
-  { 
-    title: "Chapter 2: New World", 
-    author: "Author2", 
-    date: "2025-01-02", 
-    subChapters: [
-      { title: "Sub-Chapter 2.1: The Awakening", date: "2025-01-15" },
-      { title: "Sub-Chapter 2.2: The Conflict", date: "2025-01-20" }
-    ]
+  {
+    id: 2,
+    title: "One Piece",
+    author: "Eiichiro Oda",
+    description: `Gol D. Roger, a man referred to as the "Pirate King," is set to be executed by the World Government. But just before his demise, he confirms the existence of a great treasure, One Piece, located somewhere within the vast ocean known as the Grand Line. Announcing that One Piece can be claimed by anyone worthy enough to reach it, the Pirate King is executed and the Great Age of Pirates begins.`,
+    coverImage: "/src/assets/onepiece.jpg",
+    datePublished: "2025-02-02",
+    genres: ["Shounen", "Adventure", "Action"],
+    chapters: [
+      {
+        chapterId: 1,
+        bookId: 2,
+        title: "Chapter 1: The Pirate King's Last Words",
+        author: "Eiichiro Oda",
+        reason: "Introduction to the story",
+        date: "2025-02-02",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+        subChapters: [
+          {
+            subChapterId: "1.1",
+            bookId: 2,
+            title: "The Execution of Gol D. Roger",
+            author: "Eiichiro Oda",
+            reason: "The death of the Pirate King",
+            date: "2025-02-02",
+            content: loremIpsum,
+            imageUrl: "../../public/img/COVER (2).jpg",
+          },
+          {
+            subChapterId: "1.2",
+            bookId: 2,
+            title: "The Birth of the Pirate Era",
+            author: "Eiichiro Oda",
+            reason: "Beginning of the Great Age of Pirates",
+            date: "2025-02-04",
+            content: loremIpsum,
+            imageUrl: "../../public/img/COVER (3).jpg",
+          },
+        ],
+      },
+      {
+        chapterId: 2,
+        bookId: 2,
+        title: "Chapter 2: The Rise of the New Pirates",
+        author: "Eiichiro Oda",
+        reason: "Pirates begin their journey",
+        date: "2025-02-10",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 3,
+        bookId: 2,
+        title: "Chapter 3: The Grand Line",
+        author: "Eiichiro Oda",
+        reason: "Pirates reach the Grand Line",
+        date: "2025-02-12",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 4,
+        bookId: 2,
+        title: "Chapter 4: The First Challenge",
+        author: "Eiichiro Oda",
+        reason: "First major fight",
+        date: "2025-02-15",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 5,
+        bookId: 2,
+        title: "Chapter 5: The Legendary Island",
+        author: "Eiichiro Oda",
+        reason: "Discovery of a hidden island",
+        date: "2025-02-20",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 6,
+        bookId: 2,
+        title: "Chapter 6: The Conqueror's Will",
+        author: "Eiichiro Oda",
+        reason: "Pirates' will to fight",
+        date: "2025-02-25",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 7,
+        bookId: 2,
+        title: "Chapter 7: Allies and Enemies",
+        author: "Eiichiro Oda",
+        reason: "New alliances and rivalries",
+        date: "2025-03-01",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 8,
+        bookId: 2,
+        title: "Chapter 8: The Battle for the Treasure",
+        author: "Eiichiro Oda",
+        reason: "Treasure fight",
+        date: "2025-03-05",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 9,
+        bookId: 2,
+        title: "Chapter 9: The Final Stretch",
+        author: "Eiichiro Oda",
+        reason: "Final adventure towards the treasure",
+        date: "2025-03-10",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 10,
+        bookId: 2,
+        title: "Chapter 10: The One Piece",
+        author: "Eiichiro Oda",
+        reason: "The treasure is revealed",
+        date: "2025-03-15",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+    ],
+    comments: [
+      { user: "Peyronie", text: "Epic battle scenes! 🔥", time: "2 minutes ago" },
+      { user: "MystR", text: "Can't believe the ending!!", time: "5 minutes ago" },
+      { user: "Critique", text: "A bit too slow in Chapter 6", time: "1 week ago" },
+    ],
+    suggestions: [
+      { bookId: 1, title: "A Returner's Magic Should Be Special", chapter: "3", image: "/img/beginer.jpg" },
+      { bookId: 3, title: "Jojo's Bizarre Adventure Part 7", chapter: "5", image: "/src/assets/jojopart7.jpg" },
+    ],
   },
-  { 
-    title: "Chapter 3: The Escape", 
-    author: "Author3", 
-    date: "2025-02-01", 
-    subChapters: []  // No sub-chapters
-  },
-  { 
-    title: "Chapter 4: Into the Abyss", 
-    author: "Author4", 
-    date: "2025-02-10", 
-    subChapters: [
-      { title: "Sub-Chapter 4.1: The Dark Realm", date: "2025-02-12" }
-    ]
-  },
-  { 
-    title: "Chapter 5: The Hero's Rise", 
-    author: "Author5", 
-    date: "2025-03-01", 
-    subChapters: []  // No sub-chapters
-  },
-  { 
-    title: "Chapter 6: The Labyrinth", 
-    author: "Author6", 
-    date: "2025-03-10", 
-    subChapters: [
-      { title: "Sub-Chapter 6.1: The Entrance", date: "2025-03-12" },
-      { title: "Sub-Chapter 6.2: The Traps", date: "2025-03-15" },
-      { title: "Sub-Chapter 6.3: The Secret Path", date: "2025-03-18" }
-    ]
-  },
-  { 
-    title: "Chapter 7: The Final Test", 
-    author: "Author7", 
-    date: "2025-03-25", 
-    subChapters: [
-      { title: "Sub-Chapter 7.1: The Challenge", date: "2025-03-27" }
-    ]
-  },
-  { 
-    title: "Chapter 8: The End of Time", 
-    author: "Author8", 
-    date: "2025-04-01", 
-    subChapters: []  // No sub-chapters
-  },
-  { 
-    title: "Chapter 9: The Legend Reborn", 
-    author: "Author9", 
-    date: "2025-04-05", 
-    subChapters: [
-      { title: "Sub-Chapter 9.1: The Return", date: "2025-04-08" },
-      { title: "Sub-Chapter 9.2: The Awakening", date: "2025-04-10" }
-    ]
-  },
-  { 
-    title: "Chapter 10: The Journey Continues", 
-    author: "Author10", 
-    date: "2025-04-12", 
-    subChapters: []  // No sub-chapters
+  {
+    id: 3,
+    title: "Jojo's Bizarre Adventure Part 7",
+    author: "Dingdong Dantes",
+    description: `Johnny Joestar, a young former horse racer unable to walk, travels to San Diego to bear witness to the commencement of the Steel Ball Run. There Johnny meets Gyro Zeppeli, a competitor sporting steel balls in lieu of a firearm. Amid a duel, Johnny observes Gyro using his steel ball to convey an extraordinary power, coercing a man to shoot himself. In an unexpected turn of events, Johnny touches the steel ball and senses a strength pulsating through his legs, enabling him to rise for the first time in two years. Determined to unravel the enigma behind the steel balls, Johnny resolves to partake in the race, initiating his extraordinary adventure throughout America on the Steel Ball Run.`,
+    coverImage: "/src/assets/jojopart7.jpg",
+    datePublished: "2025-03-03",
+    genres: ["Fantasy", "Adventure", "Action"],
+    chapters: [
+      {
+        chapterId: 1,
+        bookId: 3,
+        title: "Chapter 1: The Beginning of the Steel Ball Run",
+        author: "Dingdong Dantes",
+        reason: "Introduction to the race and characters",
+        date: "2025-03-03",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+        subChapters: [
+          {
+            subChapterId: "1.1",
+            bookId: 3,
+            title: "Johnny's First Step",
+            author: "Dingdong Dantes",
+            reason: "Johnny Joestar's initial steps in the race",
+            date: "2025-03-03",
+            content: loremIpsum,
+            imageUrl: "../../public/img/COVER (2).jpg",
+          },
+          {
+            subChapterId: "1.2",
+            bookId: 3,
+            title: "Gyro Zeppeli's Mysterious Power",
+            author: "Dingdong Dantes",
+            reason: "Gyro's introduction and steel ball technique",
+            date: "2025-03-05",
+            content: loremIpsum,
+            imageUrl: "../../public/img/COVER (3).jpg",
+          },
+        ],
+      },
+      {
+        chapterId: 2,
+        bookId: 3,
+        title: "Chapter 2: A Rival's Challenge",
+        author: "Dingdong Dantes",
+        reason: "Johnny faces his first challenge",
+        date: "2025-03-10",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 3,
+        bookId: 3,
+        title: "Chapter 3: The Race Begins",
+        author: "Dingdong Dantes",
+        reason: "The race officially starts",
+        date: "2025-03-12",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 4,
+        bookId: 3,
+        title: "Chapter 4: Steel Balls and Steel Foes",
+        author: "Dingdong Dantes",
+        reason: "Rivals come forward",
+        date: "2025-03-15",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 5,
+        bookId: 3,
+        title: "Chapter 5: The Clash of Strengths",
+        author: "Dingdong Dantes",
+        reason: "Johnny vs Gyro",
+        date: "2025-03-20",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 6,
+        bookId: 3,
+        title: "Chapter 6: Secrets of the Steel Ball",
+        author: "Dingdong Dantes",
+        reason: "Gyro's backstory revealed",
+        date: "2025-03-25",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 7,
+        bookId: 3,
+        title: "Chapter 7: The Tipping Point",
+        author: "Dingdong Dantes",
+        reason: "The race intensifies",
+        date: "2025-03-30",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 8,
+        bookId: 3,
+        title: "Chapter 8: The Secret Unveiled",
+        author: "Dingdong Dantes",
+        reason: "Johnny learns the truth about his power",
+        date: "2025-04-02",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 9,
+        bookId: 3,
+        title: "Chapter 9: The Final Duel",
+        author: "Dingdong Dantes",
+        reason: "The ultimate showdown",
+        date: "2025-04-05",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+      {
+        chapterId: 10,
+        bookId: 3,
+        title: "Chapter 10: The Journey Continues",
+        author: "Dingdong Dantes",
+        reason: "Cliffhanger ending",
+        date: "2025-04-10",
+        content: loremIpsum,
+        imageUrl: "../../public/img/adjest.jpg",
+      },
+    ],
+    comments: [
+      { user: "Peyronie", text: "Epic race!! 🏁", time: "2 minutes ago" },
+      { user: "MystR", text: "Johnny is so cool!", time: "5 minutes ago" },
+      { user: "Critique", text: "A bit too long in some parts", time: "1 week ago" },
+    ],
+    suggestions: [
+      { bookId: 1, title: "A Returner's Magic Should Be Special", chapter: "3", image: "/img/beginer.jpg" },
+      { bookId: 2, title: "One Piece", chapter: "8", image: "/src/assets/onepiece.jpg" },
+    ],
   }
-];
-
-
-export const comments = [
-  { user: "Peyronie", text: "I cried at this scene 😭", time: "1 minute ago" },
-  { user: "MystR", text: "Best chapter so far!", time: "2 minutes ago" },
-  { user: "Critique", text: "Little hard to follow Chapter 3", time: "1 week ago" },
-];
-
-export const suggestions = [
-  { title: "Ajani's Bizarre Adventure Part V", chapter: "1000+" },
-  // more suggestions...
-];
+]; 

@@ -2,20 +2,73 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  box-shadow: 3px 3px 3px black;
   border-radius: 15px;
-  width: 450px;
+  max-width: 355px;
+  max-height: 200px;
+  background-color: white;
+  box-shadow: 2px 2px 10px black;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  color:inherit;
+}
+
+.cardWrapper:hover{
+  background-color: #5D00FF;
+  cursor: pointer;
+}
+
+.cardWrapper:hover .title,
+.cardWrapper:hover .desc,
+.cardWrapper:hover .branches,
+.cardWrapper:hover .genre {
+  color: white;
 }
 
 .infoWrapper{
-  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 5px;
+}
+.title{
+  font-size: 19px;
+}
+.title, .desc{
+  max-width: 284px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;       
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.status{
+  color: lime;
+}
+
+.genre{
+  color:#0000FF;
+}
+.storyImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
 }
 
 .storyImage img{
-  height: 236px;
-  width: 151px;
+  border-radius: 15px;
+  height: 190px;
+  width: 120px;
 }
 
 .desc{
   border-color: black;
+}
+
+.status, .desc, .branches, .genre{
+  font-size: 1.1rem;
+  
 }

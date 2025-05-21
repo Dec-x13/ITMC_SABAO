@@ -1,0 +1,86 @@
+.chapterNum, .updateTime{
+    color: white;
+    margin: 2px;
+    font-size: 13.72px;
+}
+
+.chapterNum{
+    margin-left: 5px;
+}
+
+.updateTime{
+    margin-right: 5px;
+}
+
+.mtitle, .mbranches{
+    margin: 2px;
+    font-size: 1rem;
+}
+
+.mbranches{
+    color: lime;
+}
+
+.minfoWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    
+}
+
+.mcardWrapper{
+    display: flex;
+    flex-direction: row;;
+    border-radius: 15px;
+    max-width: 355px;
+    max-height: 130px;
+    box-shadow: 2px 2px 12px black;
+    background-color: white;
+    transition: box-shadow 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.mcardWrapper:hover{
+    background-color: #5D00FF;
+    cursor: pointer;
+  }
+
+.mcardWrapper:hover .mtitle{
+    color: rgb(255, 255, 255);
+}
+.chapter-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #5D00FF;
+    border-radius: 10px;
+    width: 250px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+
+.mcardWrapper:hover .chapter-btn{
+    background-color: white;
+}
+
+.mcardWrapper:hover .chapterNum,
+.mcardWrapper:hover .updateTime{
+    color: #5D00FF;
+}
+
+.mstoryImage{
+    display: flex;
+    justify-content: center;
+    margin: 1px;
+}
+  
+.mstoryImage img{
+    border-radius: 15px;
+    height: 125px;
+    width: 86px;
+}

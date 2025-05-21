@@ -1,5 +1,83 @@
-.carousel{
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.mvs{
+    display: flex;
+    justify-content: center;
+    color: #000090;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 350px [col-start]);
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    justify-content: center;
+}
+
+.banner {
+    width: 100%;  /* Ensure it spans the full width of the page */
+    height: 400px; /* Adjust height of BookHeader */
+    overflow: hidden; /* Prevent overflow */
+    position: relative;
+}
+  
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* Apply blur effect to background */
+    z-index: -1; /* Keep the background behind the content */
+}
+
+.thegoat {
+    display: flex;  /* Use flexbox to arrange image and text side by side */
+    width: 70%; /* Set width to something less than 100% to center it */
+    height: 100%; /* Ensure it fills the height */
+    margin: 0 auto; /* Center the container horizontally */
+    position: relative;
+}
+.luffy {
+    width: auto;  /* Keep the image size fixed */
+    height: 100%; /* Maintain height of the BookHeader */
+}
+
+.luffy, .oplogo{
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.newrapper{
     display: flex;
     flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.authorwrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+.authors{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    align-items: center;
     gap: 10px;
+}
+
+.authors img{
+    width:6rem;
+    align-items: center;
+    border-radius: 100px;
 }

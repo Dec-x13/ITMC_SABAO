@@ -1,0 +1,25 @@
+.carousel-control-next,
+.carousel-control-prev{
+  position:relative !important;
+}
+
+.carousel-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex{
+  gap: 1rem;
+}
+
+.carousel-inner{
+  overflow: visible !important;
+}
+
+.arrows{
+    font-size: 4rem;
+    color: #0000FF;
+}
+
