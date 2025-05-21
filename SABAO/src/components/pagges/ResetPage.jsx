@@ -1,5 +1,5 @@
 import React from "react";
-import './compnents/pagges/styles.css';
+import './styles.css';
 import Navbar from '../navbar/navbar';
 function ResetPage() {
   return (
