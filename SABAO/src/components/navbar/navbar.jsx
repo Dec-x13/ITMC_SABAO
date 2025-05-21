@@ -52,6 +52,9 @@ const Navbar = () => {
         <a href="#">Genres</a>
         <a href="#">Newest</a>
         <a href="#">Updated</a>
+        <li><Link to="/login">Login</Link></li>
+        <li><Link to="/register">Register</Link></li>
+        <li><Link to="/reset">Reset</Link></li>
       </div>
       <button className="navbar__publish" onClick={handlePublish}>Publish</button>
       <div className="navbar__search-container">
