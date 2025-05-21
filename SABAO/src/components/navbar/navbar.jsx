@@ -49,7 +49,7 @@ const Navbar = () => {
         StoryWeaver
       </a>
       <div className="navbar__links">
-        <a href="#">Genres</a>
+        <a href="#"><Link to="/genres">Genres</Link></a>
         <a href="#">Newest</a>
         <a href="#">Updated</a>
       </div>
