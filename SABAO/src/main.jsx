@@ -6,12 +6,13 @@ import HomePage from './components/home/home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import LandingPage from './components/landing/LandingPage';
+import Genres from './components/Genres/genres';
 import App from './App';
 import "./index.css"
 
 createRoot(document.getElementById('root')).render(
 
     <App />
-    
+    // <Genres />
  
 )
