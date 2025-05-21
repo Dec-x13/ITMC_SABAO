@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import SWLogo from '../../assets/SW_logo.png'; // Adjust path if needed
-
+import {Link} from'react-router-dom';
 const GENRES = [
   "Fantasy",
   "Romance",
@@ -49,7 +49,7 @@ const Navbar = () => {
         StoryWeaver
       </a>
       <div className="navbar__links">
-        <a href="#"><Link to="/genres">Genres</Link></a>
+        <Link to="/genres">Genres</Link>
         <a href="#">Newest</a>
         <a href="#">Updated</a>
       </div>
