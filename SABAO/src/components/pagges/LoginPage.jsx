@@ -5,27 +5,29 @@ import Navbar from '../navbar/navbar';
 function LoginPage() {
   return (
     <>
- <Navbar/>
-      <div className="container">
-        <h1>Login</h1>
-        <form method="POST" action="/login">
+ <Navbar />
+      <div className="login-container">
+        <h1 className="login-title">Login</h1>
+        <form method="POST" action="/login" className="login-form">
           <input
             type="email"
             name="email"
             placeholder="Enter Email"
             required
+            className="login-input"
           />
           <input
             type="password"
             name="password"
             placeholder="Enter Password"
             required
+            className="login-input"
           />
-          <button type="submit">Login</button>
+          <button type="submit" className="login-button">Login</button>
         </form>
-        <div>
-          <Link to="/register" className="link">Register here</Link><br />
-          <Link to="/reset" className="link">Forgot Password?</Link>
+        <div className="login-links">
+          <Link to="/register" className="login-link">Register here</Link><br />
+          <Link to="/reset" className="login-link">Forgot Password?</Link>
         </div>
       </div>
     </>

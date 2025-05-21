@@ -1,63 +1,90 @@
-/* body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #3c00ff, #8f5aff);
-    color: white;
-    text-align: center;
-    min-height: 100vh;
-  }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #3c00ff, #8f5aff);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.login-navbar {
+  background: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.login-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.login-container {
+  margin-top: 100px;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  margin-left: auto;
+  margin-right: auto;
   
-  .navbar {
-    background: white;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .logo {
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  .brand {
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
-  }
-  
-  .container {
-    margin-top: 100px;
-  }
-  
-  input {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    width: 250px;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #e0e0e0;
-  }
-  
-  .link {
-    color: white;
-    text-decoration: underline;
-    margin-top: 10px;
-    display: inline-block;
-  }
-   */
+}
+
+.login-container h1 {
+  color: #ffffff; 
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.login-input {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  width: 100%;
+  max-width: 300px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+}
+
+.login-button {
+  display: block;
+  padding: 12px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  margin: 20px auto 10px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  max-width: 300px;
+}
+
+.login-button:hover {
+  background-color: #e0e0e0;
+}
+
+.login-link {
+  color: #d0e3ff;
+  text-decoration: underline;
+  margin-top: 10px;
+  display: block;
+  font-size: 14px;
+}
+
+.login-link:hover {
+  color: white;
+}
