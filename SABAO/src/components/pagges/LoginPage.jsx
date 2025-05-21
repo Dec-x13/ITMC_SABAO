@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./pagges/styles.css";
+import "./components/pagges/styles.css";
 
 function LoginPage() {
   return (

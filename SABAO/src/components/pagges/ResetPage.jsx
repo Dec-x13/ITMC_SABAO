@@ -1,5 +1,5 @@
 import React from "react";
-import "./pagges/styles.css";
+import "./components/pagges/styles.css";
 
 function ResetPage() {
   return (
