@@ -14,7 +14,7 @@
 
 .mtitle, .mbranches{
     margin: 2px;
-    font-size: 13.72px;
+    font-size: 1rem;
 }
 
 .mbranches{
@@ -35,15 +35,22 @@
     border-radius: 15px;
     max-width: 355px;
     max-height: 130px;
+    box-shadow: 2px 2px 12px black;
     background-color: white;
     transition: box-shadow 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    text-decoration: none;
+    color: inherit;
 }
 
 .mcardWrapper:hover{
-    box-shadow: 2px 2px 12px black;
+    background-color: #5D00FF;
     cursor: pointer;
   }
 
+.mcardWrapper:hover .mtitle{
+    color: rgb(255, 255, 255);
+}
 .chapter-btn{
     display: flex;
     flex-direction: row;
@@ -53,7 +60,17 @@
     width: 250px;
     margin-top: 5px;
     margin-bottom: 5px;
-    
+    transition: background-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+
+.mcardWrapper:hover .chapter-btn{
+    background-color: white;
+}
+
+.mcardWrapper:hover .chapterNum,
+.mcardWrapper:hover .updateTime{
+    color: #5D00FF;
 }
 
 .mstoryImage{

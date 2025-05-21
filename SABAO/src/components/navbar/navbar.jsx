@@ -10,7 +10,11 @@ const GENRES = [
   "Sci-Fi",
   "Horror",
   "Comedy",
-  "Drama"
+  "Drama",
+  "Action",
+  "Shounen",
+  "Ecchi",
+  "Doujinshi"
 ];
 
 const Navbar = () => {

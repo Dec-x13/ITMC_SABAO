@@ -1,16 +1,20 @@
 import React, { useState } from 'react';
 import "./LargeCard.css";
+import { Link } from 'react-router-dom';
 
-function LargeCard() {
+function LargeCard( {book} ) {
+    const titleLength = book.title.length;
+    const fontSize = titleLength > 25 ? '16px' : '24px';
+
     return(
-        <div className = "lcardWrapper">
+        <Link to={`/story/${book.id}`} className = "lcardWrapper">
             <div className = "lstoryImage">
-                <img src="src\assets\onepiece.jpg" alt="" />
+                <img src={book.coverImage} alt="" />
             </div>
             <div className = "ltitlewrapper">
-                <h2 className = "ltitle">One Piece</h2>
+                <h2 className = "ltitle" style={{fontSize}}>{book.title}</h2>
             </div>
-        </div>
+        </Link>
     )
 }
 
