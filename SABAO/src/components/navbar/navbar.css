@@ -8,6 +8,8 @@
   border: 1px solid #ccc;
   box-sizing: border-box;
   gap: 16px;
+  z-index: 10; /* Eensure navbar stays above the blur */
+  position: relative; /* To make z-index effective */
 }
 
 .navbar-logo {
