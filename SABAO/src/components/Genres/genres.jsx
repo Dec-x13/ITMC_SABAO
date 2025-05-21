@@ -9,9 +9,9 @@ function Genres(){
         <Navbar/>
         <GenreNav/>
             <div className="scrollable-container">
-            <div className="genre-page">
-            <CardGrid/> 
-            </div>
+                <div className="genre-page">
+                    <CardGrid/> 
+                </div>
             </div>
         </>
         
