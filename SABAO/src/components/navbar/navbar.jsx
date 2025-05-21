@@ -87,7 +87,9 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      <button className="navbar__login" onClick={handleLogin}>Log in</button>
+      <Link to="/login">
+      <button className="navbar__login">Log in</button>
+      </Link>
     </nav>
   );
 };

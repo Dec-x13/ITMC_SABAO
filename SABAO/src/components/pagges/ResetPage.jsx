@@ -1,15 +1,10 @@
 import React from "react";
-import "./pagges/styles.css";
-
+import './styles.css';
+import Navbar from '../navbar/navbar';
 function ResetPage() {
   return (
     <>
-      <div className="navbar">
-        <img src="/assets/SW_logo.png" alt="StoryWeaver Logo" className="logo" />
-        <span className="brand">
-          Story<span style={{ color: "#0055ff" }}>Weaver</span>
-        </span>
-      </div>
+<Navbar/>
       <div className="container">
         <h1>Reset Password</h1>
         <form method="POST" action="/reset">
