@@ -6,6 +6,9 @@ import Story from './Story';
 import ChapterRead from './components/story/ChapterReader';
 import Genres from './components/Genres/genres';
 import StoryEditor from './components/editor/StoryEditor';
+import LoginPage from './pagges/LoginPage';
+import RegisterPage from './pagges/RegisterPage';
+import ResetPage from './pagges/ResetPage';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -19,6 +22,9 @@ function App() {
                 <Route path="/chapter/:id" element={<ChapterRead />} />
                 <Route path="/editor" element={<StoryEditor />} />
                 <Route path="/genres" element={<Genres />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/register" element={<RegisterPage />} />
+                <Route path="/reset" element={<ResetPage />} />
             </Routes>
         </Router>
     );
