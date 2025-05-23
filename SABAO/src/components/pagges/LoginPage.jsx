@@ -5,7 +5,9 @@ import Navbar from '../navbar/navbar';
 function LoginPage() {
   return (
     <>
- <Navbar />
+
+<div className="body-part">
+   <Navbar />
       <div className="login-container">
         <h1 className="login-title">Login</h1>
         <form method="POST" action="/login" className="login-form">
@@ -30,6 +32,8 @@ function LoginPage() {
           <Link to="/reset" className="login-link">Forgot Password?</Link>
         </div>
       </div>
+      </div>
+
     </>
   );
 }

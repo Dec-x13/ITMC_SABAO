@@ -4,7 +4,8 @@ import Navbar from '../navbar/navbar';
 function ResetPage() {
   return (
     <>
-<Navbar />
+<div className="body-part">
+  <Navbar />
       <div className="login-container">
         <h1 className="login-title">Reset Password</h1>
         <form method="POST" action="/reset" className="login-form">
@@ -27,6 +28,7 @@ function ResetPage() {
           </button>
         </form>
       </div>
+   </div>
     </>
   );
 }

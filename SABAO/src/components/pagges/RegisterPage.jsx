@@ -4,7 +4,9 @@ import Navbar from '../navbar/navbar';
 function RegisterPage() {
   return (
     <>
-  <Navbar />
+
+  <div className="body-part">
+     <Navbar />
       <div className="login-container">
         <h1 className="login-title">Register an Account</h1>
         <form method="POST" action="/register" className="login-form">
@@ -33,6 +35,7 @@ function RegisterPage() {
             Create Account
           </button>
         </form>
+      </div>
       </div>
     </>
   );
